@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="portalgateway" />
+        <module name="portal-register" />
+        <module name="portalpojo" />
+        <module name="portalrecruit" />
+        <module name="portal-recruit" />
+        <module name="portal-course" />
+        <module name="portal-convenience" />
+        <module name="portal-resume" />
+        <module name="portal-gateway" />
+        <module name="portal-user-manager" />
+        <module name="portal-common" />
+        <module name="portal-pojo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="portal-course" target="1.8" />
+      <module name="portal-user-manager" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="portal" options="" />
+      <module name="portal-common" options="-parameters" />
+      <module name="portal-convenience" options="-parameters" />
+      <module name="portal-course" options="-parameters" />
+      <module name="portal-gateway" options="-parameters" />
+      <module name="portal-pojo" options="-parameters" />
+      <module name="portal-recruit" options="-parameters" />
+      <module name="portal-register" options="-parameters" />
+      <module name="portal-resume" options="-parameters" />
+      <module name="portal-user-manager" options="-parameters" />
+      <module name="portalgateway" options="-parameters" />
+      <module name="portalpojo" options="-parameters" />
+      <module name="portalrecruit" options="-parameters" />
+    </option>
+  </component>
+</project>

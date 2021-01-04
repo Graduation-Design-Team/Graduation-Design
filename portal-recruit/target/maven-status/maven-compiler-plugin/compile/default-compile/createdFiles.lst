@@ -1,0 +1,4 @@
+com\portal\mapper\UserMapper.class
+com\portal\PortalRecruitApplication.class
+com\portal\controller\UserController.class
+com\portal\service\UserService.class
