@@ -1,0 +1,44 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: portal-gateway
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://admin:admin@portal:10086/eureka
+zuul:
+  prefix: /api # 路由路径前缀
+  routes:
+    portal-recruit: /recruit/** # 门户网站微服务的映射路径
+    portal-user: /user/** #用户微服务隐射路径
+    portal-convenience: /convenience/** #便民微服务映射路径
+    portal-course: /course/** #课程微服务
+    portal-resume: /resume/** #简历微服务
+  #开启限流 60秒内不能超过60次
+  ratelimit:
+    enabled: true
+    default-policy:
+      limit: 60
+      refresh-interval: 60
+      #针对ip限流
+      type: origin
+
+ribbon:
+  OkToRetryOnAllOperations: false   #是否对所有请求进行重试
+  MaxAutoRetries: 0     #对当前实例的重试次数，默认0
+  MaxAutoRetriesNextServer: 1 #对切换实例的重试次数，默认1
+  ReadTimeout: 60000     #负载均衡超时时间，默认值5000
+  ConnectTimeout: 60000  #ribbon请求连接的超时时间，默认值2000
+
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000 # 设置hystrix的超时时间为6000ms

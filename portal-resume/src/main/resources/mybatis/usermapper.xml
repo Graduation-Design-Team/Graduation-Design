@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portal.mapper.userDao">
+
+<resultMap id="BaseResultMap" type="com.portal.pojo.User">
+    <id column="user_id" jdbcType="INTEGER" property="user_id"/>
+    <result column="user_name" jdbcType="VARCHAR" property="user_name"/>
+    <result column="user_sex" jdbcType="INTEGER" property="user_sex"/>
+    <result column="user_address" jdbcType="VARCHAR" property="user_address"/>
+    <result column="user_age" jdbcType="INTEGER" property="user_age"/>
+    <result column="user_creatime" jdbcType="TIMESTAMP" property="user_creatime"/>
+    <result column="user_phone" jdbcType="INTEGER" property="user_phone"/>
+    <result column="user_mail" jdbcType="VARCHAR" property="user_mail"/>
+    <result column="user_photo_url" jdbcType="VARCHAR" property="user_photo_url"/>
+</resultMap>
+
+    <sql id="Base_Column_List">
+    user_id,user_name,user_sex,user_address,user_age,user_creatime,user_phone,user_mail,user_photo_url
+  </sql>
+
+    <insert id="addUser" parameterType="com.portal.pojo.User">
+        insert into user (user_id,user_name,user_sex,user_address,user_age,user_creatime,user_phone,user_mail)
+        values (#{user_id},#{user_name},#{user_sex},
+                #{user_address},#{user_age},#{user_creatime},
+                #{user_phone},#{user_mail})
+    </insert>
+
+    <insert id="addUserSelective" parameterType="com.portal.pojo.User">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="user_id != null">
+                user_id,
+            </if>
+            <if test="user_name != null">
+                user_name,
+            </if>
+            <if test="user_sex != null">
+                user_sex,
+            </if>
+            <if test="user_address != null">
+                user_address,
+            </if>
+            <if test="user_age != null">
+                user_age,
+            </if>
+            <if test="user_creatime != null">
+                user_creatime,
+            </if>
+            <if test="user_phone != null">
+                user_phone,
+            </if>
+            <if test="user_mail != null">
+                user_mail,
+            </if>
+            <if test="user_photo_url != null">
+                user_photo_url,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="user_id != null">
+                #{user_id},
+            </if>
+            <if test="user_name != null">
+                #{user_name},
+            </if>
+            <if test="user_sex != null">
+                #{user_sex},
+            </if>
+            <if test="user_address != null">
+                #{user_address},
+            </if>
+            <if test="user_age != null">
+                #{user_age},
+            </if>
+            <if test="user_creatime != null">
+                #{user_creatime},
+            </if>
+            <if test="user_phone != null">
+                #{user_phone},
+            </if>
+            <if test="user_mail != null">
+                #{user_mail},
+            </if>
+            <if test="user_photo_url != null">
+                #{user_photo_url},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="queryUser" parameterType="Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user where user_id = #{user_id}
+    </select>
+
+    <select id="quetyUserAll" resultType="com.portal.pojo.User">
+        select * from user
+    </select>
+
+    <delete id="deleteUser" parameterType="Long">
+        delete from user where user_id = #{user_id}
+    </delete>
+
+    <update id="updateUserSelective" parameterType="com.portal.pojo.User">
+        update user
+        <set>
+            <if test="user_name != null">
+                user_name = #{user_name},
+            </if>
+            <if test="user_sex != null">
+                user_sex = #{user_sex},
+            </if>
+            <if test="user_address != null">
+                user_address = #{user_address},
+            </if>
+            <if test="user_age != null">
+                user_age = #{user_age},
+            </if>
+            <if test="user_creatime != null">
+                user_creatime = #{user_creatime},
+            </if>
+            <if test="user_phone != null">
+                user_phone = #{user_phone},
+            </if>
+            <if test="user_mail != null">
+                user_mail = #{user_mail},
+            </if>
+            <if test="user_photo_url != null">
+                #{user_photo_url},
+            </if>
+        </set>
+            where user_id = #{user_id}
+    </update>
+
+    <update id="updateUserAll" parameterType="com.portal.pojo.User">
+        update user
+        set
+        user_id = #{user_id},
+        user_name = #{user_name},
+        user_sex = #{user_sex},
+        user_address = #{user_address},
+        user_age = #{user_age},
+        user_creatime = #{user_creatime},
+        user_phone = #{user_phone},
+        user_mail = #{user_mail},
+        where user_id = #{user_id}
+    </update>
+
+    <insert id="uploadUserImg" parameterType="STRING">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="user_photo_url != null">
+            user_photo_url,
+        </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="user_photo_url != null">
+                #{user_photo_url},
+            </if>
+        </trim>
+    </insert>
+
+</mapper>
