@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portal.mapper.resumeDao">
+    <resultMap id="BaseResultMap" type="com.portal.pojo.Resume">
+        <id column="resume_id" jdbcType="INTEGER" property="resume_id"/>
+        <result column="work_condition" jdbcType="VARCHAR" property="work_condition"/>
+        <result column="recruit_progress" jdbcType="VARCHAR" property="recruit_progress"/>
+        <result column="program_experience" jdbcType="VARCHAR" property="program_experience"/>
+        <result column="eduction_experience" jdbcType="VARCHAR" property="eduction_experience"/>
+        <result column="school_performance" jdbcType="VARCHAR" property="school_performance"/>
+        <result column="self_evaluation" jdbcType="VARCHAR" property="self_evaluation"/>
+        <result column="additional_info" jdbcType="VARCHAR" property="additional_info"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    resume_id,work_condition,recruit_progress,program_experience,
+    eduction_experience,school_performance,self_evaluation,additional_info
+    </sql>
+
+    <insert id="insertByIdSelective" parameterType="com.portal.pojo.Resume">
+        insert into resume
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="resume_id != null">
+                resume_id,
+            </if>
+            <if test="work_condition != null">
+                work_condition,
+            </if>
+            <if test="recruit_progress != null">
+                recruit_progress,
+            </if>
+            <if test="program_experience != null">
+                program_experience,
+            </if>
+            <if test="eduction_experience != null">
+                eduction_experience,
+            </if>
+            <if test="school_performance != null">
+                school_performance,
+            </if>
+            <if test="self_evaluation != null">
+                self_evaluation,
+            </if>
+            <if test="additional_info != null">
+                additional_info,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="resume_id != null">
+                #{resume_id},
+            </if>
+            <if test="work_condition != null">
+                #{work_condition},
+            </if>
+            <if test="recruit_progress != null">
+                #{recruit_progress},
+            </if>
+            <if test="program_experience != null">
+                #{program_experience},
+            </if>
+            <if test="eduction_experience != null">
+                #{eduction_experience},
+            </if>
+            <if test="school_performance != null">
+                #{school_performance},
+            </if>
+            <if test="self_evaluation != null">
+                #{self_evaluation},
+            </if>
+            <if test="additional_info != null">
+                #{additional_info},
+            </if>
+        </trim>
+    </insert>
+
+    <insert id="insertByIdAll" parameterType="com.portal.pojo.Resume">
+        insert into resume
+        (resume_id,work_condition,recruit_progress,
+        program_experience,eduction_experience,school_performance,self_evaluation,
+        additional_info)
+        values
+        (#{resume_id},#{work_condition},#{recruit_progress},
+        #{program_experience},#{eduction_experience},#{school_performance},
+        #{self_evaluation},#{additional_info})
+    </insert>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from resume where resume_id = #{resume_id}
+    </delete>
+
+    <update id="updateByIdSelective" parameterType="com.portal.pojo.Resume">
+        update resume
+        <set>
+            <if test="resume_id != null">
+                resume_id = #{resume_id},
+            </if>
+            <if test="work_condition != null">
+                work_condition = #{work_condition},
+            </if>
+            <if test="recruit_progress != null">
+                recruit_progress = #{recruit_progress},
+            </if>
+            <if test="program_experience != null">
+                program_experience = #{program_experience},
+            </if>
+            <if test="eduction_experience != null">
+                eduction_experience = #{eduction_experience},
+            </if>
+            <if test="school_performance != null">
+                school_performance = #{school_performance},
+            </if>
+            <if test="self_evaluation != null">
+                self_evaluation = #{self_evaluation},
+            </if>
+            <if test="additional_info != null">
+                additional_info = #{additional_info},
+            </if>
+        </set>
+        where resume_id = #{resume_id}
+    </update>
+
+    <update id="updateByIdAll" parameterType="com.portal.pojo.Resume">
+        update resume set
+            resume_id = #{resume_id},
+            work_condition = #{work_condition},
+            recruit_progress = #{recruit_progress},
+            program_experience = #{program_experience},
+            eduction_experience = #{eduction_experience},
+            school_performance = #{school_performance},
+            self_evaluation = #{self_evaluation},
+            additional_info = #{additional_info}
+        where resume_id = #{resume_id}
+    </update>
+
+    <!--<select id="queryResumeSelective" resultMap="BaseResultMap">-->
+        <!--select-->
+        <!--<include refid="Base_Column_List" />-->
+        <!--from resume-->
+        <!--<where>-->
+            <!--<if test="resume_id !=null">-->
+                <!--resume_id=#{resume_id}-->
+            <!--</if>-->
+            <!--<if test="work_condition !=null">-->
+                <!--and work_condition=#{work_condition}-->
+            <!--</if>-->
+            <!--<if test="recruit_progress !=null">-->
+                <!--and recruit_progress=#{recruit_progress}-->
+            <!--</if>-->
+            <!--<if test="program_experience !=null">-->
+                <!--and program_experience=#{program_experience}-->
+            <!--</if>-->
+            <!--<if test="eduction_experience !=null">-->
+            <!--and eduction_experience=#{eduction_experience}-->
+            <!--</if>-->
+            <!--<if test="school_performance !=null">-->
+            <!--and school_performance=#{school_performance}-->
+            <!--</if>-->
+            <!--<if test="self_evaluation !=null">-->
+            <!--and self_evaluation=#{self_evaluation}-->
+            <!--</if>-->
+            <!--<if test="additional_info !=null">-->
+            <!--and additional_info=#{additional_info}-->
+            <!--</if>-->
+        <!--</where>-->
+    <!--</select>-->
+
+    <select id="quertResumeAll" resultMap="BaseResultMap">
+        select * from resume
+    </select>
+
+
+
+
+
+</mapper>

@@ -1,7 +1,6 @@
 package com.portal.mapper;
 
 import com.portal.pojo.User;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

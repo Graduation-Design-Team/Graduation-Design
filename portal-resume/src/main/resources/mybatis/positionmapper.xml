@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portal.mapper.positionDao">
+    <resultMap id="BaseResultMap" type="com.portal.pojo.Position">
+        <id column="position_id" jdbcType="INTEGER" property="position_id"/>
+        <result column="technical_position" jdbcType="VARCHAR" property="technical_position"/>
+        <result column="company" jdbcType="VARCHAR" property="company"/>
+        <result column="technical_require" jdbcType="VARCHAR" property="technical_require"/>
+        <result column="work_salary" jdbcType="VARCHAR" property="work_salary"/>
+        <result column="position_location" jdbcType="VARCHAR" property="position_location"/>
+        <result column="position_type" jdbcType="INTEGER" property="position_type"/>
+        <result column="release_time" jdbcType="TIMESTAMP" property="release_time"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    position_id,technical_position,company,technical_require,
+    work_salary,position_location,position_type,release_time
+    </sql>
+
+    <select id="showPositionById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from position
+        where position_id = #{position_id}
+    </select>
+
+    <select id="showPositionAll" resultMap="BaseResultMap">
+        select * from position
+    </select>
+
+    <select id="selectPositionFive" parameterType="com.portal.pojo.Position" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        FROM position
+        <where>
+            <if test="technical_position !=null">
+                technical_position=#{technical_position}
+            </if>
+            <if test="company !=null">
+                and company=#{company}
+            </if>
+            <if test="technical_require !=null">
+                and technical_require=#{technical_require}
+            </if>
+            <if test="work_salary !=null">
+                and work_salary=#{work_salary}
+            </if>
+            <if test="position_type !=null">
+                and position_type=#{position_type}
+            </if>
+        </where>
+    </select>
+
+
+
+
+
+
+</mapper>

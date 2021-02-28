@@ -1,7 +1,6 @@
 package com.portal.service;
 
 import com.portal.pojo.User;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

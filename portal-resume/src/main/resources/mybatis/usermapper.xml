@@ -3,7 +3,6 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.portal.mapper.userDao">
-
 <resultMap id="BaseResultMap" type="com.portal.pojo.User">
     <id column="user_id" jdbcType="INTEGER" property="user_id"/>
     <result column="user_name" jdbcType="VARCHAR" property="user_name"/>
@@ -15,11 +14,9 @@
     <result column="user_mail" jdbcType="VARCHAR" property="user_mail"/>
     <result column="user_photo_url" jdbcType="VARCHAR" property="user_photo_url"/>
 </resultMap>
-
     <sql id="Base_Column_List">
     user_id,user_name,user_sex,user_address,user_age,user_creatime,user_phone,user_mail,user_photo_url
   </sql>
-
     <insert id="addUser" parameterType="com.portal.pojo.User">
         insert into user (user_id,user_name,user_sex,user_address,user_age,user_creatime,user_phone,user_mail)
         values (#{user_id},#{user_name},#{user_sex},
@@ -84,22 +81,21 @@
                 #{user_mail},
             </if>
             <if test="user_photo_url != null">
-                #{user_photo_url},
+                user_photo_url = #{user_photo_url},
             </if>
         </trim>
     </insert>
 
-    <select id="queryUser" parameterType="Long" resultMap="BaseResultMap">
+    <select id="queryUser"  parameterType="java.lang.Long" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
-        from user where user_id = #{user_id}
+        from user
+        where user_id = #{user_id}
     </select>
-
-    <select id="quetyUserAll" resultType="com.portal.pojo.User">
+    <select id="queryUserAll" resultMap="BaseResultMap">
         select * from user
     </select>
-
-    <delete id="deleteUser" parameterType="Long">
+    <delete id="deleteUser" parameterType="java.lang.Long">
         delete from user where user_id = #{user_id}
     </delete>
 
@@ -137,18 +133,18 @@
     <update id="updateUserAll" parameterType="com.portal.pojo.User">
         update user
         set
-        user_id = #{user_id},
-        user_name = #{user_name},
-        user_sex = #{user_sex},
-        user_address = #{user_address},
-        user_age = #{user_age},
-        user_creatime = #{user_creatime},
-        user_phone = #{user_phone},
-        user_mail = #{user_mail},
-        where user_id = #{user_id}
+            user_id = #{user_id},
+            user_name = #{user_name},
+            user_sex = #{user_sex},
+            user_address = #{user_address},
+            user_age = #{user_age},
+            user_creatime = #{user_creatime},
+            user_phone = #{user_phone},
+            user_mail = #{user_mail}
+        where user.user_id = #{user_id}
     </update>
 
-    <insert id="uploadUserImg" parameterType="STRING">
+    <insert id="uploadUserImg" parameterType="java.lang.String">
         insert into user
         <trim prefix="(" suffix=")" suffixOverrides=",">
         <if test="user_photo_url != null">
