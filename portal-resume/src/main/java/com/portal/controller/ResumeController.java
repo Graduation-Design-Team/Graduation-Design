@@ -26,8 +26,8 @@ public class ResumeController {
         return resumeService.insertByIdAll(resume);
     }
 
-    @RequestMapping(value = "resume/deleteById",method = RequestMethod.DELETE)
-    public Boolean deleteById(@PathVariable("resume_id") Long id){
+    @RequestMapping(value = "resume/deleteById/{resume_id}",method = RequestMethod.DELETE)
+    public Boolean deleteById(@PathVariable("resume_id") Integer id){
         return resumeService.deleteById(id);
     }
 
@@ -42,13 +42,13 @@ public class ResumeController {
     }
 
     @RequestMapping(value = "resume/queryResumeSelective",method = RequestMethod.GET)
-    public Resume queryResumeSelective(@PathVariable("resume_id") Long id){
-        return resumeService.queryResumeSelective(id);
+    public Resume queryResumeSelective(Resume resume){
+        return resumeService.queryResumeSelective(resume);
     }
 
     @RequestMapping(value = "resume/quertResumeAll",method = RequestMethod.GET)
-    public List<Resume> quertResumeAll(){
-        return resumeService.quertResumeAll();
+    public List<Resume> queryResumeAll(){
+        return resumeService.queryResumeAll();
     }
 
 }

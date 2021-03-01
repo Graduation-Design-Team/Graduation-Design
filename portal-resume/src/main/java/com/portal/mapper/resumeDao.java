@@ -14,13 +14,13 @@ public interface resumeDao {
 
     Boolean insertByIdAll(Resume resume);
 
-    Boolean deleteById(Long id);
+    Boolean deleteById(Integer id);
 
     Boolean updateByIdSelective(Resume resume);
 
     Boolean updateByIdAll(Resume resume);
 
-    Resume queryResumeSelective(Long id);
+    Resume queryResumeSelective(Resume resume);
 
-    List<Resume> quertResumeAll();
+    List<Resume> queryResumeAll();
 }

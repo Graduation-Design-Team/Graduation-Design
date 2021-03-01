@@ -22,7 +22,7 @@ public class PositionController {
     @Autowired
     private PositionService positionService;
 
-    @RequestMapping(value = "/resume/showPositionById/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/resume/showPositionById/{position_id}",method = RequestMethod.GET)
     public Position showPositionById(@PathVariable("position_id")Integer id){
         return  positionService.showPositionById(id);
     }

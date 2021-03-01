@@ -133,39 +133,39 @@
         where resume_id = #{resume_id}
     </update>
 
-    <!--<select id="queryResumeSelective" resultMap="BaseResultMap">-->
-        <!--select-->
-        <!--<include refid="Base_Column_List" />-->
-        <!--from resume-->
-        <!--<where>-->
-            <!--<if test="resume_id !=null">-->
-                <!--resume_id=#{resume_id}-->
-            <!--</if>-->
-            <!--<if test="work_condition !=null">-->
-                <!--and work_condition=#{work_condition}-->
-            <!--</if>-->
-            <!--<if test="recruit_progress !=null">-->
-                <!--and recruit_progress=#{recruit_progress}-->
-            <!--</if>-->
-            <!--<if test="program_experience !=null">-->
-                <!--and program_experience=#{program_experience}-->
-            <!--</if>-->
-            <!--<if test="eduction_experience !=null">-->
-            <!--and eduction_experience=#{eduction_experience}-->
-            <!--</if>-->
-            <!--<if test="school_performance !=null">-->
-            <!--and school_performance=#{school_performance}-->
-            <!--</if>-->
-            <!--<if test="self_evaluation !=null">-->
-            <!--and self_evaluation=#{self_evaluation}-->
-            <!--</if>-->
-            <!--<if test="additional_info !=null">-->
-            <!--and additional_info=#{additional_info}-->
-            <!--</if>-->
-        <!--</where>-->
-    <!--</select>-->
+    <select id="queryResumeSelective" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from resume
+        <where>
+            <if test="resume_id !=null">
+                resume_id=#{resume_id}
+            </if>
+            <if test="work_condition !=null">
+                and work_condition=#{work_condition}
+            </if>
+            <if test="recruit_progress !=null">
+                and recruit_progress=#{recruit_progress}
+            </if>
+            <if test="program_experience !=null">
+                and program_experience=#{program_experience}
+            </if>
+            <if test="eduction_experience !=null">
+                and eduction_experience=#{eduction_experience}
+            </if>
+            <if test="school_performance !=null">
+                and school_performance=#{school_performance}
+            </if>
+            <if test="self_evaluation !=null">
+                and self_evaluation=#{self_evaluation}
+            </if>
+            <if test="additional_info !=null">
+                and additional_info=#{additional_info}
+            </if>
+        </where>
+    </select>
 
-    <select id="quertResumeAll" resultMap="BaseResultMap">
+    <select id="queryResumeAll" resultMap="BaseResultMap">
         select * from resume
     </select>
 

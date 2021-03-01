@@ -4,7 +4,6 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.portal.mapper.resumeDao;
 import com.portal.pojo.Resume;
-import com.portal.pojo.User;
 import com.portal.service.ResumeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +28,7 @@ public class ResumeServicelmp implements ResumeService {
     }
 
     @Override
-    public Boolean deleteById(Long id) {
+    public Boolean deleteById(Integer id) {
         return resumedao.deleteById(id);
     }
 
@@ -44,14 +43,14 @@ public class ResumeServicelmp implements ResumeService {
     }
 
     @Override
-    public Resume queryResumeSelective(Long id) {
-        return resumedao.queryResumeSelective(id);
+    public Resume queryResumeSelective(Resume resume) {
+        return resumedao.queryResumeSelective(resume);
     }
 
     @Override
-    public List<Resume> quertResumeAll() {
+    public List<Resume> queryResumeAll() {
         PageHelper.startPage(1,6);
-        List<Resume> mylist = resumedao.quertResumeAll();
+        List<Resume> mylist = resumedao.queryResumeAll();
         PageInfo<Resume> pageInfo = new PageInfo<>(mylist);
         return pageInfo.getList();
     }

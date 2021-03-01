@@ -18,10 +18,10 @@
     user_id,user_name,user_sex,user_address,user_age,user_creatime,user_phone,user_mail,user_photo_url
   </sql>
     <insert id="addUser" parameterType="com.portal.pojo.User">
-        insert into user (user_id,user_name,user_sex,user_address,user_age,user_creatime,user_phone,user_mail)
+        insert into user (user_id,user_name,user_sex,user_address,user_age,user_creatime,user_phone,user_mail,user_photo_url)
         values (#{user_id},#{user_name},#{user_sex},
                 #{user_address},#{user_age},#{user_creatime},
-                #{user_phone},#{user_mail})
+                #{user_phone},#{user_mail},#{user_photo_url})
     </insert>
 
     <insert id="addUserSelective" parameterType="com.portal.pojo.User">
@@ -145,17 +145,7 @@
     </update>
 
     <insert id="uploadUserImg" parameterType="java.lang.String">
-        insert into user
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-        <if test="user_photo_url != null">
-            user_photo_url,
-        </if>
-        </trim>
-        <trim prefix="values (" suffix=")" suffixOverrides=",">
-            <if test="user_photo_url != null">
-                #{user_photo_url},
-            </if>
-        </trim>
+        insert into user (user_photo_url) value (#{user_photo_url})
     </insert>
 
 </mapper>
