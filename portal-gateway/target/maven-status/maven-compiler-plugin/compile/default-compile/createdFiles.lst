@@ -1,0 +1,4 @@
+com\portal\filter\UserFilter.class
+com\portal\hystrix\ApiFallBack.class
+com\portal\PortalGatewayApplication.class
+com\portal\hystrix\ApiFallBack$1.class

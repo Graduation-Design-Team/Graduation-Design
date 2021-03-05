@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/portal-registry/target/" />
+    <ignored path="$PROJECT_DIR$/portal-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/portal-recruit/target/" />
+    <ignored path="$PROJECT_DIR$/portal-recruit/portal-interface/target/" />
+    <ignored path="$PROJECT_DIR$/portal-recruit/portal-service/target/" />
+    <ignored path="$PROJECT_DIR$/portal-common/target/" />
+    <ignored path="$PROJECT_DIR$/portal-item/target/" />
+    <ignored path="$PROJECT_DIR$/portal-item/portal-interface/target/" />
+    <ignored path="$PROJECT_DIR$/portal-item/portal-service/target/" />
+    <ignored path="$PROJECT_DIR$/portal-pojo/target/" />
+    <ignored path="$PROJECT_DIR$/portal-register/target/" />
+    <ignored path="$PROJECT_DIR$/com-portal-UserManager/target/" />
+    <ignored path="$PROJECT_DIR$/com-portal-user-manager/target/" />
+    <ignored path="$PROJECT_DIR$/com-portal-convenience/target/" />
+    <ignored path="$PROJECT_DIR$/com-portal-course/target/" />
+    <ignored path="$PROJECT_DIR$/com-portal-resume/target/" />
+    <ignored path="$PROJECT_DIR$/portal-convenience/target/" />
+    <ignored path="$PROJECT_DIR$/portal-user-manager/target/" />
+    <ignored path="$PROJECT_DIR$/portal-course/target/" />
+    <ignored path="$PROJECT_DIR$/portal-resume/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="portal" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>maven</find>
+      <find>zuul</find>
+      <find>pring-data</find>
+      <find>hibernate</find>
+      <find>hiber</find>
+      <find>spring</find>
+      <find>808</find>
+      <find>swagger</find>
+      <find>Integer</find>
+      <find>png</find>
+      <find>https</find>
+      <find>inputFilePath</find>
+      <find>boundary</find>
+      <find>Region</find>
+      <find>Picture</find>
+      <find>pictureEntityMapper</find>
+      <find>key</find>
+      <find>GeneratedValue</find>
+      <find>posCategorys</find>
+      <find>page</find>
+      <find>latest</find>
+      <find>spring-cloud-commons</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Long</replace>
+      <replace>Vedio</replace>
+      <replace>navPictureEntityMapper</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/DocumentEntity.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/ArticlePictureEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/ArticleVedioEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/CityEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/DocumentEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/NavPictureEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/NavVedioEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/PosCategoryController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/WorkTypeEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/NavCategoryController.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/NavPictureEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/NavVedioEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/NavCategoryEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ArticlePictureEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ArticleVedioEntity.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/ArticleEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ArticleEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/CityEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/WorkTypeEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/PosDetailEntity.java" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/PosCategoryEntity.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/mapper/PosDetailEntityMapper.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/PosDetailEntityController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/test/java/com/portal/TestDemo.java" />
+        <option value="$PROJECT_DIR$/portal-common/src/main/java/utils/UploadFileUtils.java" />
+        <option value="$PROJECT_DIR$/portal-common/src/main/java/PortalCommonApplication.java" />
+        <option value="$PROJECT_DIR$/portal-common/src/main/java/com/portal/common/PortalCommonApplication.java" />
+        <option value="$PROJECT_DIR$/portal-common/pom.xml" />
+        <option value="$PROJECT_DIR$/portal-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/portal-register/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/portal-register/pom.xml" />
+        <option value="$PROJECT_DIR$/portal-recruit/pom.xml" />
+        <option value="$PROJECT_DIR$/portal-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/portal-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/PortalRecruitApplication.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/ApplicationController.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ApplicationService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ApplicationProcessEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ArticleEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ArticlePictureEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ArticleVedioEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/CityEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/DocumentEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/NavCategoryService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/NavPictureEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/NavVedioEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/PosCategoryService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/PosDetailEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/UserEntityService.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/WorkTypeEntityService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven_repository" />
+        <option name="mavenHome" value="D:/apache-maven-3.5.2" />
+        <option name="outputLevel" value="ERROR" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="portal-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="portal-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-Xmx1024M -Xms512M" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="726" />
+    <option name="y" value="87" />
+    <option name="width" value="1143" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="D:/IdeaAndroidSdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/portal-recruit/src/test/java/com/portal" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15004337" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.splitter.proportion" value="0.23980816" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.portal.pojo" />
+      <recent name="com.portal.kkk" />
+      <recent name="com.portal.controller" />
+      <recent name="com.portal.service" />
+      <recent name="com.portal.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\课程作业\毕业设计\招聘模块代码\portal-dev\portal\portal-recruit\src\test\java\com\portal" />
+      <recent name="D:\idea2019WorkSpace\portal-dev\portal\portal-pojo\src\main\java\com\portal\pojo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.26881722" />
+  </component>
+  <component name="RunManager" selected="JUnit.TestDemo.applicationProcessTest">
+    <configuration name="TestDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="portal-recruit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.portal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.portal" />
+      <option name="MAIN_CLASS_NAME" value="com.portal.TestDemo" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDemo.applicationProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="portal-recruit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.portal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.portal" />
+      <option name="MAIN_CLASS_NAME" value="com.portal.TestDemo" />
+      <option name="METHOD_NAME" value="applicationProcessTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDemo.uploadPic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="portal-recruit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.portal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.portal" />
+      <option name="MAIN_CLASS_NAME" value="com.portal.TestDemo" />
+      <option name="METHOD_NAME" value="uploadPic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.common.PortalCommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalConvenienceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-convenience" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalConvenienceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalCourseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-course" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalCourseApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalGatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalRecruitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-recruit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalRecruitApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-register" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalRegistryApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalResumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-resume" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalResumeApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PortalUserManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="portal-user-manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalUserManagerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestDemo.uploadPic" />
+      <item itemvalue="JUnit.TestDemo" />
+      <item itemvalue="JUnit.TestDemo.applicationProcessTest" />
+      <item itemvalue="Spring Boot.PortalRegistryApplication" />
+      <item itemvalue="Spring Boot.PortalGatewayApplication" />
+      <item itemvalue="Spring Boot.PortalRecruitApplication" />
+      <item itemvalue="Spring Boot.PortalUserManagerApplication" />
+      <item itemvalue="Spring Boot.PortalConvenienceApplication" />
+      <item itemvalue="Spring Boot.PortalCourseApplication" />
+      <item itemvalue="Spring Boot.PortalResumeApplication" />
+      <item itemvalue="Spring Boot.PortalCommonApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestDemo.applicationProcessTest" />
+        <item itemvalue="JUnit.TestDemo.uploadPic" />
+        <item itemvalue="JUnit.TestDemo" />
+        <item itemvalue="Spring Boot.PortalRegistryApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="" />
+      <created>1607348882790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607348882790</updated>
+      <workItem from="1607348888770" duration="857000" />
+      <workItem from="1607349760151" duration="582000" />
+      <workItem from="1607350350021" duration="1068000" />
+      <workItem from="1607351429260" duration="3595000" />
+      <workItem from="1607397943628" duration="3286000" />
+      <workItem from="1607401810487" duration="608000" />
+      <workItem from="1607406812339" duration="271000" />
+      <workItem from="1607415730533" duration="6000" />
+      <workItem from="1607416326793" duration="1243000" />
+      <workItem from="1609083031284" duration="1065000" />
+      <workItem from="1609132116739" duration="2378000" />
+      <workItem from="1609134865670" duration="2150000" />
+      <workItem from="1609137099320" duration="1848000" />
+      <workItem from="1609139028682" duration="675000" />
+      <workItem from="1609139712545" duration="8541000" />
+      <workItem from="1609153247806" duration="7947000" />
+      <workItem from="1609209822824" duration="19636000" />
+      <workItem from="1609295748901" duration="1571000" />
+      <workItem from="1609651137957" duration="9435000" />
+      <workItem from="1609671349700" duration="534000" />
+      <workItem from="1609671892135" duration="3479000" />
+      <workItem from="1609686157758" duration="477000" />
+      <workItem from="1609686644427" duration="486000" />
+      <workItem from="1609687136547" duration="54000" />
+      <workItem from="1609687193407" duration="2111000" />
+      <workItem from="1609689608099" duration="100000" />
+      <workItem from="1609737043511" duration="6019000" />
+      <workItem from="1609811925740" duration="114000" />
+      <workItem from="1609812045782" duration="1160000" />
+      <workItem from="1609813450287" duration="22000" />
+      <workItem from="1613524963471" duration="20000" />
+      <workItem from="1613530098386" duration="1672000" />
+      <workItem from="1613532629784" duration="47000" />
+      <workItem from="1613532678728" duration="3945000" />
+      <workItem from="1613536631231" duration="30000" />
+      <workItem from="1613536663931" duration="616000" />
+      <workItem from="1613537282928" duration="36000" />
+      <workItem from="1613537321405" duration="39000" />
+      <workItem from="1613537363254" duration="260000" />
+      <workItem from="1613537626250" duration="358000" />
+      <workItem from="1613538100220" duration="3059000" />
+      <workItem from="1613541188606" duration="48000" />
+      <workItem from="1613541239419" duration="1972000" />
+      <workItem from="1613543231314" duration="358000" />
+      <workItem from="1613543595319" duration="35000" />
+      <workItem from="1613543632112" duration="212000" />
+      <workItem from="1613543848184" duration="312000" />
+      <workItem from="1613544165753" duration="1317000" />
+      <workItem from="1613553197740" duration="2950000" />
+      <workItem from="1613556541811" duration="100000" />
+      <workItem from="1613556644378" duration="454000" />
+      <workItem from="1613557116131" duration="105000" />
+      <workItem from="1613557224204" duration="39000" />
+      <workItem from="1613557265549" duration="104000" />
+      <workItem from="1613557372693" duration="46000" />
+      <workItem from="1613557421339" duration="18000" />
+      <workItem from="1613557464490" duration="46000" />
+      <workItem from="1613557514123" duration="2209000" />
+      <workItem from="1613560381705" duration="230000" />
+      <workItem from="1613560637783" duration="436000" />
+      <workItem from="1613561080367" duration="18000" />
+      <workItem from="1613561101150" duration="33000" />
+      <workItem from="1613561136758" duration="54000" />
+      <workItem from="1613561193538" duration="26000" />
+      <workItem from="1613561221787" duration="60000" />
+      <workItem from="1613561284655" duration="302000" />
+      <workItem from="1613561591705" duration="860000" />
+      <workItem from="1613563319879" duration="1423000" />
+      <workItem from="1613565601870" duration="154000" />
+      <workItem from="1613565758808" duration="1353000" />
+      <workItem from="1613567127693" duration="476000" />
+      <workItem from="1613567611004" duration="1887000" />
+      <workItem from="1613569518681" duration="28000" />
+      <workItem from="1613569548898" duration="687000" />
+      <workItem from="1613570244445" duration="335000" />
+      <workItem from="1613570584959" duration="132000" />
+      <workItem from="1613570719838" duration="138000" />
+      <workItem from="1613570861441" duration="35000" />
+      <workItem from="1613570898629" duration="15000" />
+      <workItem from="1613570916175" duration="297000" />
+      <workItem from="1613571216958" duration="378000" />
+      <workItem from="1613571601181" duration="448000" />
+      <workItem from="1613572055511" duration="342000" />
+      <workItem from="1613609601142" duration="547000" />
+      <workItem from="1613610157408" duration="40000" />
+      <workItem from="1613610200061" duration="812000" />
+      <workItem from="1613611977908" duration="2068000" />
+      <workItem from="1613615828081" duration="7287000" />
+      <workItem from="1613630071059" duration="7614000" />
+      <workItem from="1613644545555" duration="8284000" />
+      <workItem from="1613729750087" duration="3333000" />
+      <workItem from="1613739719469" duration="5037000" />
+      <workItem from="1613779340885" duration="3176000" />
+      <workItem from="1613795307131" duration="3590000" />
+      <workItem from="1613810943190" duration="2695000" />
+      <workItem from="1613813763305" duration="2357000" />
+      <workItem from="1613816755970" duration="13000" />
+      <workItem from="1613822052650" duration="8041000" />
+      <workItem from="1613872373087" duration="3762000" />
+      <workItem from="1613878348775" duration="3588000" />
+      <workItem from="1613889932451" duration="9523000" />
+      <workItem from="1613908079975" duration="3416000" />
+      <workItem from="1613959786642" duration="5380000" />
+      <workItem from="1613974494689" duration="6975000" />
+      <workItem from="1613989275302" duration="4004000" />
+      <workItem from="1613995624216" duration="4876000" />
+      <workItem from="1614029625531" duration="7424000" />
+      <workItem from="1614042701078" duration="7220000" />
+      <workItem from="1614057091716" duration="3100000" />
+      <workItem from="1614068336615" duration="7820000" />
+      <workItem from="1614083493125" duration="5650000" />
+      <workItem from="1614125529066" duration="2956000" />
+      <workItem from="1614133749858" duration="7026000" />
+      <workItem from="1614145637486" duration="13284000" />
+      <workItem from="1614159254590" duration="202000" />
+      <workItem from="1614159846818" duration="395000" />
+      <workItem from="1614222972387" duration="221000" />
+      <workItem from="1614334088306" duration="228000" />
+      <workItem from="1614341713178" duration="209000" />
+      <workItem from="1614342083134" duration="2895000" />
+      <workItem from="1614345284783" duration="1887000" />
+      <workItem from="1614349099076" duration="2809000" />
+      <workItem from="1614663982991" duration="8671000" />
+      <workItem from="1614691381642" duration="888000" />
+      <workItem from="1614696432645" duration="549000" />
+      <workItem from="1614698170010" duration="598000" />
+      <workItem from="1614726940038" duration="640000" />
+      <workItem from="1614837898366" duration="1554000" />
+      <workItem from="1614927599574" duration="1391000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestDemo_uploadPic - 2021.02.22 at 10h 55m 38s.xml">
+      <configuration name="TestDemo.uploadPic" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_uploadPic - 2021.02.22 at 11h 08m 23s.xml">
+      <configuration name="TestDemo.uploadPic" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_uploadPic - 2021.02.22 at 11h 12m 14s.xml">
+      <configuration name="TestDemo.uploadPic" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_uploadPic - 2021.02.22 at 11h 26m 07s.xml">
+      <configuration name="TestDemo.uploadPic" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_uploadPic - 2021.02.22 at 11h 27m 16s.xml">
+      <configuration name="TestDemo.uploadPic" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo - 2021.02.22 at 11h 33m 35s.xml">
+      <configuration name="TestDemo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_uploadPic - 2021.02.22 at 11h 34m 52s.xml">
+      <configuration name="TestDemo.uploadPic" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_uploadPic - 2021.02.22 at 19h 16m 16s.xml">
+      <configuration name="TestDemo.uploadPic" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_applicationProcessTest - 2021.02.24 at 08h 26m 54s.xml">
+      <configuration name="TestDemo.applicationProcessTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="285907000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info id="Structure" order="0" sideWeight="0.5096525" side_tool="true" weight="0.12206952" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5110294" side_tool="true" weight="0.34033954" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.48897058" visible="true" weight="0.26273242" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290441" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8143382" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290441" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49959645" weight="0.3602941" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50282943" side_tool="true" weight="0.49264705" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3290441" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3290441" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49717057" weight="0.28860295" />
+      <window_info anchor="right" id="Bean Validation" order="0" weight="0.32902184" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.32497978" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.2489895" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32902184" />
+      <window_info anchor="right" id="leetcode" order="10" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" sideWeight="0.5096525" side_tool="true" weight="0.12206952" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5110294" side_tool="true" weight="0.34033954" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.48897058" visible="true" weight="0.2586904" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290441" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8143382" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290441" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49959645" weight="0.3602941" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50282943" side_tool="true" weight="0.49264705" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3290441" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3290441" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49717057" weight="0.41727942" />
+      <window_info anchor="right" id="Bean Validation" order="0" weight="0.32902184" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.32497978" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.2489895" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32902184" />
+      <window_info anchor="right" id="leetcode" order="10" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/ArticleEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ArticleVedioEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="127" column="111" selection-start-line="127" selection-start-column="111" selection-end-line="127" selection-end-column="111" />
+          <folding>
+            <element signature="e#2677#2678#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ArticleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="112" column="25" lean-forward="true" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2212#2213#0" expanded="true" />
+            <element signature="e#2240#2241#0" expanded="true" />
+            <element signature="e#2299#2300#0" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+            <element signature="e#2516#2517#0" expanded="true" />
+            <element signature="e#2704#2705#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/CityPosDetailEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/CityPosDetailEntityPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/CityEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <folding>
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/PosDetailWorkTypeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/PosDetailWorkTypeEntityPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/WorkTypeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="53" column="62" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
+          <folding>
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/NavPictureEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="119" column="29" lean-forward="true" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/NavCategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/PosDetailEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="127" column="104" selection-start-line="127" selection-start-column="104" selection-end-line="127" selection-end-column="104" />
+          <folding>
+            <element signature="e#3825#3826#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/PosCategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/mapper/PosDetailEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="e#1#62#0" expanded="true" />
+            <element signature="e#0#62#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/PosDetailEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="26" column="93" selection-start-line="26" selection-start-column="93" selection-end-line="26" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-user-manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/NavVedioEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3651">
+          <caret line="170" column="42" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/mapper/ApplicationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#55#1" expanded="true" />
+            <element signature="e#0#55#1" expanded="true" />
+            <element signature="e#0#59#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/test/java/com/portal/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="27" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-common/src/main/java/utils/UploadFileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-common/src/main/java/com/portal/common/PortalCommonApplication.java" />
+    <entry file="file://$PROJECT_DIR$/portal-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/NavPictureEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/NavCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-register/src/main/portal-registry.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/jdk1.8/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-register/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-register/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/config/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" selection-start-line="10" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/PortalRecruitApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/ApplicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ApplicationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ApplicationProcessEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ArticleEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ArticlePictureEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/ArticleVedioEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/CityEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/DocumentEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/NavCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/NavPictureEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/NavVedioEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/WorkTypeEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/PosDetailEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/UserEntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/PosCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>portal-gateway</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
