@@ -19,9 +19,9 @@ import java.util.UUID;
 
 public class UploadFileUtils {
 
-    private static String secretId = "AKID95sY6SbKP4hT3NEEF3cit9AvHjKggkRo";
+    private static String secretId = "";
 
-    private static String secretKey = "xnV4RaaU8ZumPn5B7lEUVHwTbglvttfB";
+    private static String secretKey = "";
 
     /**
      * 构造body
