@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-course/portal-course.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-resume/target/classes/META-INF/com-portal-resume.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-user-manager/portal-user-manager.iml" afterDir="false" />
+    <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="编写了便民服(失物招领)的初步代码">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-convenience/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-convenience/src/main/java/com/portal/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-convenience/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-convenience/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-course/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-course/src/main/java/com/portal/PortalCourseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-course/src/main/java/com/portal/PortalCourseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-course/src/main/java/com/portal/com/portal/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-course/src/main/java/com/portal/com/portal/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-course/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-course/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-course/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-course/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-resume/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-resume/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-resume/src/main/java/com/portal/PortalResumeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-resume/src/main/java/com/portal/PortalResumeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-resume/src/main/java/com/portal/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-resume/src/main/java/com/portal/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-resume/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-resume/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-resume/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-resume/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-user-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-user-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-user-manager/src/main/java/com/portal/PortalUserManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-user-manager/src/main/java/com/portal/PortalUserManagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-user-manager/src/main/java/com/portal/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-user-manager/src/main/java/com/portal/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-user-manager/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-user-manager/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com-portal-user-manager/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-user-manager/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-course/portal-course.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-register/src/main/java/com/portal/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-register/src/main/java/com/portal/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-user-manager/portal-user-manager.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,6 +39,9 @@
     <ignored path="$PROJECT_DIR$/com-portal-course/target/" />
     <ignored path="$PROJECT_DIR$/com-portal-resume/target/" />
     <ignored path="$PROJECT_DIR$/portal-convenience/target/" />
+    <ignored path="$PROJECT_DIR$/portal-user-manager/target/" />
+    <ignored path="$PROJECT_DIR$/portal-course/target/" />
+    <ignored path="$PROJECT_DIR$/portal-resume/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,21 +62,189 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="portal: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="portal: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="items_search: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="134593863">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="java" value="26" />
+          <entry key="pom" value="1" />
+          <entry key="sql" value="1" />
+          <entry key="xml" value="13" />
+          <entry key="yml" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="26" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="14" />
+          <entry key="YAML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="679" />
+          <entry key="txt" value="50" />
+          <entry key="xml" value="292" />
+          <entry key="yml" value="115" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="679" />
+          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="290" />
+          <entry key="YAML" value="115" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="portal" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portal-pojo/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -96,24 +256,18 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="容泽军 &lt;2508926778@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/PortalServiceApplication.java" />
-        <option value="$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/service/UserService.java" />
-        <option value="$PROJECT_DIR$/portal-item/portal-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/portal-item/pom.xml" />
-        <option value="$PROJECT_DIR$/portal-item/portal-service/pom.xml" />
-        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/potal/pojo/User.java" />
-        <option value="$PROJECT_DIR$/portal-common/src/main/java/PortalCommonApplication.java" />
-        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/PortalPojoApplication.java" />
         <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/UserService.java" />
-        <option value="$PROJECT_DIR$/portal-pojo/pom.xml" />
         <option value="$PROJECT_DIR$/portal-common/pom.xml" />
         <option value="$PROJECT_DIR$/portal-registry/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/portal-registry/pom.xml" />
@@ -124,13 +278,11 @@
         <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/controller/UserController.java" />
         <option value="$PROJECT_DIR$/portal-gateway/src/main/java/com/portal/PortalGatewayApplication.java" />
         <option value="$PROJECT_DIR$/portal-register/pom.xml" />
-        <option value="$PROJECT_DIR$/portal-register/src/main/java/com/portal/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/portal-register/src/main/java/com/portal/PortalRegistryApplication.java" />
         <option value="$PROJECT_DIR$/portal-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/portal-gateway/src/main/java/com/portal/hystrix/RecruitFallBack.java" />
         <option value="$PROJECT_DIR$/portal-gateway/src/main/java/com/portal/hystrix/ApiFallBack.java" />
         <option value="$PROJECT_DIR$/portal-recruit/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/portal-register/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/com-portal-UserManager/pom.xml" />
         <option value="$PROJECT_DIR$/com-portal-UserManager/src/main/java/PortalUserManagerApplication.java" />
         <option value="$PROJECT_DIR$/com-portal-UserManager/src/main/java/PortalUserApplication.java" />
@@ -151,29 +303,46 @@
         <option value="$PROJECT_DIR$/com-portal-resume/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/portal-gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/com-portal-resume/src/main/java/com/portal/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/portal-register/src/main/java/com/portal/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/portal-register/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/portal-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsClaim.java" />
+        <option value="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java" />
+        <option value="$PROJECT_DIR$/portal-convenience/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java" />
+        <option value="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" />
+        <option value="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" />
+        <option value="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\maven_repository" />
-        <option name="mavenHome" value="D:/apache-maven-3.5.2" />
+        <option name="mavenHome" value="D:/develop/apache-maven-3.5.4" />
         <option name="outputLevel" value="DEBUG" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.5.2\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\develop\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -202,7 +371,9 @@
     <option name="width" value="1143" />
     <option name="height" value="1032" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -214,8 +385,160 @@
         <subPane>
           <expand>
             <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-convenience" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
+              <item name="portal-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,6 +547,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -233,13 +557,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/IdeaAndroidSdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615459366530" />
+    <property name="last_opened_file_path" value="E:/Desktop/Graduation-Design-zejun" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15004337" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.23980816" />
   </component>
   <component name="RecentsManager">
@@ -248,6 +574,10 @@
       <recent name="com.portal.service" />
       <recent name="com.portal.mapper" />
       <recent name="com.potal.pojo" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.portal.service.impl" />
+      <recent name="com.portal.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,11 +598,19 @@
     </option>
     <option name="contentProportion" value="0.29397193" />
   </component>
-  <component name="RunManager" selected="Spring Boot.PortalResumeApplication">
-    <configuration name="PortalConvenienceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="portal-convenience" />
+  <component name="RunManager" selected="Spring Boot.PortalConvenienceApplication">
+    <configuration name="PortalConvenienceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="com-portal-convenience" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.portal.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalConvenienceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -310,9 +648,8 @@
       </method>
     </configuration>
     <configuration name="PortalResumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="portal-resume" />
+      <module name="com-portal-resume" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.portal.PortalResumeApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -330,12 +667,13 @@
       <item itemvalue="Spring Boot.PortalGatewayApplication" />
       <item itemvalue="Spring Boot.PortalRecruitApplication" />
       <item itemvalue="Spring Boot.PortalUserManagerApplication" />
-      <item itemvalue="Spring Boot.PortalConvenienceApplication" />
       <item itemvalue="Spring Boot.PortalCourseApplication" />
       <item itemvalue="Spring Boot.PortalResumeApplication" />
+      <item itemvalue="Spring Boot.PortalConvenienceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PortalConvenienceApplication" />
         <item itemvalue="Spring Boot.PortalRegistryApplication" />
       </list>
     </recent_temporary>
@@ -377,11 +715,13 @@
       <workItem from="1609687193407" duration="2111000" />
       <workItem from="1609689608099" duration="100000" />
       <workItem from="1609737043511" duration="5603000" />
+      <workItem from="1614694463747" duration="22727000" />
+      <workItem from="1615679808318" duration="281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79606000" />
+    <option name="totallyTimeSpent" value="102614000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,7 +735,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.33091202" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.19725141" />
       <window_info id="Structure" order="1" sideWeight="0.5035461" side_tool="true" weight="0.29701373" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -416,19 +756,21 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49959645" weight="0.31985295" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50121063" side_tool="true" weight="0.4283088" />
       <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3290441" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3290441" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49878934" visible="true" weight="0.5" />
-      <window_info anchor="right" id="Bean Validation" order="0" weight="0.3292978" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="2" weight="0.18159807" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.24939467" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.3292978" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32740214" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32740214" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49878934" weight="0.49822065" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.32983023" />
+      <window_info anchor="right" id="Word Book" order="1" side_tool="true" weight="0.32983023" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.18159807" />
+      <window_info anchor="right" id="Bean Validation" order="4" weight="0.32902184" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.24939467" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Database" order="11" weight="0.22231205" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.33091202" />
@@ -470,102 +812,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="编写了便民服(失物招领)的初步代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写了便民服(失物招领)的初步代码" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/mapper/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/service/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/controller/UserController.java" />
-    <entry file="file://$PROJECT_DIR$/images/project introduce.PNG" />
-    <entry file="file://$PROJECT_DIR$/portal-item/portal-interface/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/potal/pojo/User.java" />
-    <entry file="file://$PROJECT_DIR$/portal-item/portal-service/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/portal-item/portal-service/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/portal-item/portal-service/src/main/java/com/portal/PortalServiceApplication.java" />
-    <entry file="file://$PROJECT_DIR$/portal-item/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-common/src/main/java/PortalCommonApplication.java" />
-    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/PortalPojoApplication.java" />
-    <entry file="file://$PROJECT_DIR$/portal-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-register/src/main/portal-registry.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
-          <folding>
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1986#1987#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-pojo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="51" column="12" selection-start-line="34" selection-start-column="4" selection-end-line="51" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portal-gateway/src/main/java/com/portal/ZuulFallBackImpl/RecruitFallback.java" />
-    <entry file="file://$PROJECT_DIR$/portal-register/src/main/java/com/portal/PortalRegistryApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-register/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-register/src/main/java/com/portal/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portal-gateway/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -577,11 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="55" selection-start-line="55" selection-end-line="65" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -589,31 +843,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1067">
           <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portal-register/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com-portal-UserManager/src/main/java/PortalUserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/com-portal-UserManager/src/main/java/PortalUserApplication.java" />
     <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -625,32 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-user-manager/src/main/java/com/portal/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-gateway/src/main/java/com/portal/PortalGatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,51 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portal-convenience/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="101" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/PortalRecruitApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,11 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,25 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="21" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-course/src/main/java/com/portal/com/portal/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal-course/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="100" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -765,11 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,11 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portal-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portal-resume/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -806,21 +931,242 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portal-resume/src/main/java/com/portal/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-course/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-user-manager/src/main/java/com/portal/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-course/src/main/java/com/portal/com/portal/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-gateway/src/main/java/com/portal/PortalGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.9.3/eureka-client-1.9.3.jar!/com/netflix/discovery/shared/transport/jersey/AbstractJerseyEurekaHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-register/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-register/src/main/java/com/portal/PortalRegistryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-register/src/main/java/com/portal/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.9.3/eureka-client-1.9.3.jar!/com/netflix/discovery/shared/transport/decorator/EurekaHttpClientDecorator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.9.3/eureka-client-1.9.3.jar!/com/netflix/discovery/DiscoveryClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="577" selection-start-line="577" selection-end-line="577" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/jdk8-211/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-maven-plugin/2.0.7.RELEASE/spring-boot-maven-plugin-2.0.7.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-register/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsClaimDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ba6e7ea-926e-42db-9068-73578f0ba47a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsClaim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsClaimDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="71" column="24" selection-start-line="67" selection-start-column="8" selection-end-line="71" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/generate/ItemsSearch.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/generate/ItemsSearch.java" />
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="117" column="23" lean-forward="true" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/PortalConvenienceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
