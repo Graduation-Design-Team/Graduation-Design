@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portal.dao.ItemsClaimDao">
+  <resultMap id="BaseResultMap" type="com.portal.pojo.ItemsClaim">
+    <id column="item_id" jdbcType="INTEGER" property="itemId" />
+    <result column="item_name" jdbcType="VARCHAR" property="itemName" />
+    <result column="time_picked" jdbcType="VARCHAR" property="timePicked" />
+    <result column="place_picked" jdbcType="VARCHAR" property="placePicked" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="time_pubished" jdbcType="DATE" property="timePubished" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    item_id, item_name, time_picked, place_picked, phone, time_pubished, user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from items_claim
+    where item_id = #{itemId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from items_claim
+    where item_id = #{itemId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim" useGeneratedKeys="true">
+    insert into items_claim (item_name, time_picked, place_picked, 
+      phone, time_pubished, user_id
+      )
+    values (#{itemName,jdbcType=VARCHAR}, #{timePicked,jdbcType=VARCHAR}, #{placePicked,jdbcType=VARCHAR}, 
+      #{phone,jdbcType=VARCHAR}, #{timePubished,jdbcType=DATE}, #{userId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim" useGeneratedKeys="true">
+    insert into items_claim
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="itemName != null">
+        item_name,
+      </if>
+      <if test="timePicked != null">
+        time_picked,
+      </if>
+      <if test="placePicked != null">
+        place_picked,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="timePubished != null">
+        time_pubished,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="itemName != null">
+        #{itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="timePicked != null">
+        #{timePicked,jdbcType=VARCHAR},
+      </if>
+      <if test="placePicked != null">
+        #{placePicked,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="timePubished != null">
+        #{timePubished,jdbcType=DATE},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.portal.pojo.ItemsClaim">
+    update items_claim
+    <set>
+      <if test="itemName != null">
+        item_name = #{itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="timePicked != null">
+        time_picked = #{timePicked,jdbcType=VARCHAR},
+      </if>
+      <if test="placePicked != null">
+        place_picked = #{placePicked,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="timePubished != null">
+        time_pubished = #{timePubished,jdbcType=DATE},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where item_id = #{itemId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.portal.pojo.ItemsClaim">
+    update items_claim
+    set item_name = #{itemName,jdbcType=VARCHAR},
+      time_picked = #{timePicked,jdbcType=VARCHAR},
+      place_picked = #{placePicked,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      time_pubished = #{timePubished,jdbcType=DATE},
+      user_id = #{userId,jdbcType=INTEGER}
+    where item_id = #{itemId,jdbcType=INTEGER}
+  </update>
+</mapper>
