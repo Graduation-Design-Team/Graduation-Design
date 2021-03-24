@@ -22,4 +22,6 @@ public interface ItemsSearchDao {
     List<ItemsSearch> selectIemsSearch();
 
     int insertItemsSearch(ItemsSearch itemsSearch);
+
+    int updateStatusByAdmin(ItemsSearch itemsSearch);
 }

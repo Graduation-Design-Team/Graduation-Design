@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="portal-register" />
+        <module name="portalpojo" />
         <module name="com-portal-convenience" />
+        <module name="portal-resume" />
         <module name="com-portal-resume" />
+        <module name="portalgateway" />
+        <module name="portal-user-manager" />
         <module name="portal-common" />
         <module name="portal-convenience" />
-        <module name="portal-course" />
         <module name="portal-gateway" />
-        <module name="portal-pojo" />
         <module name="portal-recruit" />
-        <module name="portal-register" />
-        <module name="portal-resume" />
-        <module name="portal-user-manager" />
-        <module name="portalgateway" />
-        <module name="portalpojo" />
+        <module name="portal-pojo" />
+        <module name="portal-course" />
         <module name="portalrecruit" />
       </profile>
     </annotationProcessing>
@@ -26,16 +26,18 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com-portal-convenience" options="-parameters" />
+      <module name="com-portal-resume" options="-parameters" />
       <module name="portal" options="" />
-      <module name="portal-common" options="" />
+      <module name="portal-common" options="-parameters" />
       <module name="portal-convenience" options="-parameters" />
-      <module name="portal-course" options="" />
-      <module name="portal-gateway" options="" />
-      <module name="portal-pojo" options="" />
-      <module name="portal-recruit" options="" />
-      <module name="portal-register" options="" />
+      <module name="portal-course" options="-parameters" />
+      <module name="portal-gateway" options="-parameters" />
+      <module name="portal-pojo" options="-parameters" />
+      <module name="portal-recruit" options="-parameters" />
+      <module name="portal-register" options="-parameters" />
       <module name="portal-resume" options="-parameters" />
-      <module name="portal-user-manager" options="" />
+      <module name="portal-user-manager" options="-parameters" />
       <module name="portalgateway" options="-parameters" />
       <module name="portalpojo" options="-parameters" />
       <module name="portalrecruit" options="-parameters" />

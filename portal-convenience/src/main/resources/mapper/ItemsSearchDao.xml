@@ -110,11 +110,19 @@
   </update>
 
   <select id="selectIemsSearch" resultMap="BaseResultMap">
-    select * from items_search
-      </select>
+    select *
+    from items_search
+    where status = 1
+  </select>
 
   <insert id="insertItemsSearch" parameterType="com.portal.pojo.ItemsSearch">
-    INSERT INTO items_search (item_name,place_lost,time_lost,phone,time_published)
-    VALUES (#{itemName},#{placeLost},#{timeLost},#{phone},curdate())
+    INSERT INTO items_search (item_name, place_lost, time_lost, phone, time_published, user_id)
+    VALUES (#{itemName}, #{placeLost}, #{timeLost}, #{phone}, now(), #{userId})
   </insert>
+
+  <update id="updateStatusByAdmin" parameterType="com.portal.pojo.ItemsSearch">
+    update items_search
+    set status=0
+    where item_id = #{itemId}
+  </update>
 </mapper>

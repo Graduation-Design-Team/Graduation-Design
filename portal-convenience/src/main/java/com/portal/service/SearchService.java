@@ -9,4 +9,5 @@ public interface SearchService {
 
     int insertItemsSearch(ItemsSearch itemsSearch);
 
+    int updateStatusByAdmin(ItemsSearch itemsSearch);
 }

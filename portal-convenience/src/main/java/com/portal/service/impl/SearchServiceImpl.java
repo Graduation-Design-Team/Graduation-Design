@@ -6,7 +6,6 @@ import com.portal.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -22,7 +21,12 @@ public class SearchServiceImpl implements SearchService {
     @Override
     public int insertItemsSearch(ItemsSearch itemsSearch) {
 
-        itemsSearch.setTimePublished(new Date());
+
         return itemsSearchDao.insertItemsSearch(itemsSearch);
+    }
+
+    @Override
+    public int updateStatusByAdmin(ItemsSearch itemsSearch) {
+        return itemsSearchDao.updateStatusByAdmin(itemsSearch);
     }
 }
