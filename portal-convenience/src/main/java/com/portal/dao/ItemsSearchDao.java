@@ -24,4 +24,8 @@ public interface ItemsSearchDao {
     int insertItemsSearch(ItemsSearch itemsSearch);
 
     int updateStatusByAdmin(ItemsSearch itemsSearch);
+
+    int getCount(Integer userId);
+
+    int updateStatusByUser(ItemsSearch itemsSearch);
 }

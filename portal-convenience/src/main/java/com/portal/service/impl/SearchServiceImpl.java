@@ -20,7 +20,12 @@ public class SearchServiceImpl implements SearchService {
 
     @Override
     public int insertItemsSearch(ItemsSearch itemsSearch) {
-
+        //返回当前用户的发布寻物启事信息的条数
+        int count = itemsSearchDao.getCount(itemsSearch.getUserId());
+        //如果大于3，则不能继续发布
+        if (count >= 3) {
+            return 0;
+        }
 
         return itemsSearchDao.insertItemsSearch(itemsSearch);
     }
@@ -28,5 +33,10 @@ public class SearchServiceImpl implements SearchService {
     @Override
     public int updateStatusByAdmin(ItemsSearch itemsSearch) {
         return itemsSearchDao.updateStatusByAdmin(itemsSearch);
+    }
+
+    @Override
+    public int updateStatusByUser(ItemsSearch itemsSearch) {
+        return itemsSearchDao.updateStatusByUser(itemsSearch);
     }
 }

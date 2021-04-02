@@ -124,5 +124,21 @@
     update items_search
     set status=0
     where item_id = #{itemId}
+      and status = 1
+  </update>
+
+  <select id="getCount" resultType="integer">
+    select count(*)
+    from items_search
+    where user_id = #{userId}
+      and status = 1
+  </select>
+
+  <update id="updateStatusByUser" parameterType="com.portal.pojo.ItemsSearch">
+    update items_search
+    set status=0
+    where item_id = #{itemId}
+      and user_id = #{userId}
+      and status = 1
   </update>
 </mapper>

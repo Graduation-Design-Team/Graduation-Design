@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="编写了便民服务(失物招领)的初步代码">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/com-portal-convenience.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-pojo/portal-pojo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-recruit/portal-recruit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java" afterDir="false" />
@@ -18,10 +16,6 @@
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-gateway/target/classes/META-INF/portal-gateway.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-gateway/target/test-classes/image_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-resume/target/classes/META-INF/com-portal-resume.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +91,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="rzj &lt;qq2508926778@qq.com&gt;" />
         <option value="容泽军 &lt;2508926778@qq.com&gt;" />
       </list>
     </option>
@@ -441,7 +436,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PortalConvenienceApplication">
+  <component name="RunManager" selected="Spring Boot.PortalRecruitApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PortalConvenienceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="com-portal-convenience" />
       <extension name="coverage">
@@ -563,7 +571,9 @@
       <workItem from="1615679808318" duration="418000" />
       <workItem from="1615680573128" duration="654000" />
       <workItem from="1616488269707" duration="495000" />
-      <workItem from="1616489482641" duration="1486000" />
+      <workItem from="1616489482641" duration="7719000" />
+      <workItem from="1616827348400" duration="7699000" />
+      <workItem from="1617334050120" duration="4078000" />
     </task>
     <task id="LOCAL-00001" summary="编写了便民服务(失物招领)的初步代码">
       <created>1615680133333</created>
@@ -572,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615680133333</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="编写了便民服务(失物招领)的初步代码 2021/3/24 16:18">
+      <created>1616573961792</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616573961792</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -670,7 +687,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="编写了便民服(失物招领)的初步代码" />
     <MESSAGE value="编写了便民服务(失物招领)的初步代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写了便民服务(失物招领)的初步代码" />
+    <MESSAGE value="编写了便民服务(失物招领)的初步代码 2021/3/24 16:18" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写了便民服务(失物招领)的初步代码 2021/3/24 16:18" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

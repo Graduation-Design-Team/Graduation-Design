@@ -31,7 +31,7 @@ public class controller {
     }
 
     /**
-     * 发布寻物启示
+     * 发布寻物启示(每位用户只能发布3条寻物启事)
      *
      * @param itemsSearch 丢失物品的信息
      */
@@ -47,10 +47,10 @@ public class controller {
     /**
      * 管理员 逻辑删除一条寻物信息
      *
-     * @param itemsSearch
+     * @param itemsSearch itemId
      * @return
      */
-    @PutMapping("/deleteSearch")
+    @PutMapping("/searchdeletebyadmin")
     public String deleteByAdmin(ItemsSearch itemsSearch) {
         int i = searchService.updateStatusByAdmin(itemsSearch);
         if (i != 1) {
@@ -59,4 +59,18 @@ public class controller {
         return "success";
     }
 
+    /**
+     * 用户逻辑删除自己发布的一条寻物信息
+     *
+     * @param itemsSearch userId,itemId
+     * @return
+     */
+    @PutMapping("/searchdeletebyuser")
+    public String deleteByUser(ItemsSearch itemsSearch) {
+        int i = searchService.updateStatusByUser(itemsSearch);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
 }
