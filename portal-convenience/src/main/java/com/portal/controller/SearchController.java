@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/convenience")
-public class controller {
+@RequestMapping("/search")
+public class SearchController {
     @Autowired
     private SearchService searchService;
+
     @GetMapping("/test")
     public String test() {
         return "便民服务测试";

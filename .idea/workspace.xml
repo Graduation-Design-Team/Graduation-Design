@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-recruit/portal-recruit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -436,7 +429,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PortalRecruitApplication">
+  <component name="RunManager" selected="Spring Boot.PortalConvenienceApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
