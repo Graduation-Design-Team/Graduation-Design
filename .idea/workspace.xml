@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/config/GiteeImgBedConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/ImgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/NewsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/NewsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/NewsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/NewsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/utils/ImageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/NewsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/News.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-register/portal-register.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +85,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -384,7 +401,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -411,15 +430,21 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.portal.service.impl" />
+      <recent name="com.portal.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao" />
+      <recent name="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.portal.config" />
       <recent name="com.portal.controller" />
       <recent name="com.portal.service" />
       <recent name="com.portal.mapper" />
       <recent name="com.potal.pojo" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.portal.service.impl" />
-      <recent name="com.portal.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -430,19 +455,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.PortalConvenienceApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PortalConvenienceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="com-portal-convenience" />
       <extension name="coverage">
@@ -567,6 +579,11 @@
       <workItem from="1616489482641" duration="7719000" />
       <workItem from="1616827348400" duration="7699000" />
       <workItem from="1617334050120" duration="4078000" />
+      <workItem from="1617955140009" duration="4030000" />
+      <workItem from="1618023485853" duration="586000" />
+      <workItem from="1618024159573" duration="11403000" />
+      <workItem from="1618282144180" duration="824000" />
+      <workItem from="1618296191894" duration="3543000" />
     </task>
     <task id="LOCAL-00001" summary="编写了便民服务(失物招领)的初步代码">
       <created>1615680133333</created>
@@ -582,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616573961792</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="编写了便民服务(失物招领)的 2021/4/4">
+      <created>1617506068478</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617506068478</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -677,11 +701,35 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="编写了便民服(失物招领)的初步代码" />
     <MESSAGE value="编写了便民服务(失物招领)的初步代码" />
     <MESSAGE value="编写了便民服务(失物招领)的初步代码 2021/3/24 16:18" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写了便民服务(失物招领)的初步代码 2021/3/24 16:18" />
+    <MESSAGE value="编写了便民服务(失物招领)的 2021/4/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写了便民服务(失物招领)的 2021/4/4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

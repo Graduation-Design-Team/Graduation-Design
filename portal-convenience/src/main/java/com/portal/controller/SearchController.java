@@ -24,8 +24,8 @@ public class SearchController {
      * 查询寻物启示列表
      */
     @GetMapping("/listsearch")
-    public PageInfo<ItemsSearch> listSearch(Integer pageNum, Integer pageSize) {
-        PageHelper.startPage(pageNum, pageSize);
+    public PageInfo<ItemsSearch> listSearch(@RequestParam(defaultValue = "1") Integer pageNum) {
+        PageHelper.startPage(pageNum, 5);
         List<ItemsSearch> listSearch = searchService.getListSearch();
         PageInfo<ItemsSearch> itemsSearchPageInfo = new PageInfo<>(listSearch);
         return itemsSearchPageInfo;

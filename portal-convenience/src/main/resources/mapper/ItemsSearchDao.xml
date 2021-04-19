@@ -7,7 +7,7 @@
     <result column="place_lost" jdbcType="VARCHAR" property="placeLost" />
     <result column="time_lost" jdbcType="VARCHAR" property="timeLost" />
     <result column="phone" jdbcType="VARCHAR" property="phone" />
-    <result column="time_published" jdbcType="DATE" property="timePublished" />
+    <result column="time_published" jdbcType="TIMESTAMP" property="timePublished"/>
     <result column="user_id" jdbcType="INTEGER" property="userId" />
   </resultMap>
   <sql id="Base_Column_List">
@@ -24,12 +24,10 @@
     where item_id = #{itemId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsSearch" useGeneratedKeys="true">
-    insert into items_search (item_name, place_lost, time_lost, 
-      phone, time_published, user_id
-      )
-    values (#{itemName,jdbcType=VARCHAR}, #{placeLost,jdbcType=VARCHAR}, #{timeLost,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=VARCHAR}, #{timePublished,jdbcType=DATE}, #{userId,jdbcType=INTEGER}
-      )
+    insert into items_search (item_name, place_lost, time_lost,
+                              phone, time_published, user_id)
+    values (#{itemName,jdbcType=VARCHAR}, #{placeLost,jdbcType=VARCHAR}, #{timeLost,jdbcType=VARCHAR},
+            #{phone,jdbcType=VARCHAR}, #{timePublished,jdbcType=TIMESTAMP}, #{userId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsSearch" useGeneratedKeys="true">
     insert into items_search
@@ -67,7 +65,7 @@
         #{phone,jdbcType=VARCHAR},
       </if>
       <if test="timePublished != null">
-        #{timePublished,jdbcType=DATE},
+        #{timePublished,jdbcType=TIMESTAMP},
       </if>
       <if test="userId != null">
         #{userId,jdbcType=INTEGER},
@@ -90,7 +88,7 @@
         phone = #{phone,jdbcType=VARCHAR},
       </if>
       <if test="timePublished != null">
-        time_published = #{timePublished,jdbcType=DATE},
+        time_published = #{timePublished,jdbcType=TIMESTAMP},
       </if>
       <if test="userId != null">
         user_id = #{userId,jdbcType=INTEGER},
@@ -100,17 +98,17 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.portal.pojo.ItemsSearch">
     update items_search
-    set item_name = #{itemName,jdbcType=VARCHAR},
-      place_lost = #{placeLost,jdbcType=VARCHAR},
-      time_lost = #{timeLost,jdbcType=VARCHAR},
-      phone = #{phone,jdbcType=VARCHAR},
-      time_published = #{timePublished,jdbcType=DATE},
-      user_id = #{userId,jdbcType=INTEGER}
+    set item_name      = #{itemName,jdbcType=VARCHAR},
+        place_lost     = #{placeLost,jdbcType=VARCHAR},
+        time_lost      = #{timeLost,jdbcType=VARCHAR},
+        phone          = #{phone,jdbcType=VARCHAR},
+        time_published = #{timePublished,jdbcType=TIMESTAMP},
+        user_id        = #{userId,jdbcType=INTEGER}
     where item_id = #{itemId,jdbcType=INTEGER}
   </update>
 
   <select id="selectIemsSearch" resultMap="BaseResultMap">
-    select *
+    select item_name, place_lost, time_lost, phone, time_published, user_id
     from items_search
     where status = 1
   </select>

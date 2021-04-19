@@ -1,5 +1,6 @@
 package com.portal.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -35,6 +36,7 @@ public class ItemsSearch implements Serializable {
     /**
      * 该条寻物信息的发布时间
      */
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date timePublished;
     /**
      * 用户id
