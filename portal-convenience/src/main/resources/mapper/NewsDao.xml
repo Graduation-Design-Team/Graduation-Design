@@ -98,9 +98,7 @@
             <if test="gmtCreate != null">
                 gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
             </if>
-            <if test="gmtModified != null">
-                gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
-            </if>
+            gmt_modified=now(),
             <if test="status != null">
                 `status` = #{status,jdbcType=INTEGER},
             </if>
@@ -125,7 +123,7 @@
         where news_id = #{newsId,jdbcType=INTEGER}
     </update>
     <select id="selectAll" resultMap="BaseResultMap">
-        select news_id, news_title, news_content, gmt_create, gmt_modified, read_count
+        select news_id, news_title, news_content, img, gmt_create, gmt_modified, read_count
         from news
         where status = 1
     </select>

@@ -1,8 +1,11 @@
 package com.portal.service.impl;
 
 import com.portal.dao.ItemsSearchDao;
+import com.portal.dao.UserDao;
 import com.portal.pojo.ItemsSearch;
 import com.portal.service.SearchService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,8 +13,12 @@ import java.util.List;
 
 @Service
 public class SearchServiceImpl implements SearchService {
+    private static Logger logger = LoggerFactory.getLogger(SearchServiceImpl.class);
     @Autowired
     private ItemsSearchDao itemsSearchDao;
+    @Autowired
+    private UserDao userDao;
+
 
     @Override
     public List<ItemsSearch> getListSearch() {
@@ -32,6 +39,13 @@ public class SearchServiceImpl implements SearchService {
 
     @Override
     public int updateStatusByAdmin(ItemsSearch itemsSearch) {
+        Integer userId = itemsSearch.getUserId();
+        Integer roleId = userDao.getRoleIdByUserId(userId);
+        if (roleId != 5) {
+            logger.warn("您不是管理员，无权限");
+            return 0;
+        }
+
         return itemsSearchDao.updateStatusByAdmin(itemsSearch);
     }
 

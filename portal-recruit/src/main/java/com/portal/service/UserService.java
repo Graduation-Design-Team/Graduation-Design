@@ -23,14 +23,14 @@ public class UserService {
         //这里不做数据库操作，只做模拟
         List<User> list = new ArrayList<>();
         User user = new User();
-        user.setId(1L);
-        user.setAge(18);
-        user.setBirthday(new Date());
-        user.setCreated(new Date());
-        user.setName("xiaohai");
-        user.setPassword("123");
-        user.setSex(0);
-        user.setUpdated(new Date());
+        user.setUserId(1);
+        user.setUserAge(18);
+        user.setUserBirthday(new Date());
+        ;
+        user.setUserName("xiaohai");
+        user.setUserPassword("123");
+
+
         user.setUserName("lalal");
         list.add(user);
         return list;

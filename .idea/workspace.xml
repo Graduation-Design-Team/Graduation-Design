@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/config/GiteeImgBedConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/ImgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/NewsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/NewsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/NewsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/NewsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/utils/ImageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/NewsDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/News.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-register/portal-register.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/MyContrillerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/exception/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/exception/PortalResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/UserDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/NewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/NewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/NewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/NewsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/NewsDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-recruit/src/main/java/com/portal/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +79,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,8 +99,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="rzj &lt;qq2508926778@qq.com&gt;" />
         <option value="容泽军 &lt;2508926778@qq.com&gt;" />
+        <option value="rzj &lt;qq2508926778@qq.com&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -416,7 +414,7 @@
     <property name="android.sdk.path" value="D:/IdeaAndroidSdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615459366530" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -431,8 +429,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.portal.dao" />
       <recent name="com.portal.service.impl" />
       <recent name="com.portal.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper" />
@@ -455,6 +457,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.PortalConvenienceApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PortalConvenienceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="com-portal-convenience" />
       <extension name="coverage">
@@ -583,7 +596,11 @@
       <workItem from="1618023485853" duration="586000" />
       <workItem from="1618024159573" duration="11403000" />
       <workItem from="1618282144180" duration="824000" />
-      <workItem from="1618296191894" duration="3543000" />
+      <workItem from="1618296191894" duration="4198000" />
+      <workItem from="1618999276173" duration="28000" />
+      <workItem from="1618999503051" duration="41000" />
+      <workItem from="1618999565551" duration="184000" />
+      <workItem from="1619057747764" duration="31507000" />
     </task>
     <task id="LOCAL-00001" summary="编写了便民服务(失物招领)的初步代码">
       <created>1615680133333</created>
@@ -606,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617506068478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" 2021/4/19">
+      <created>1618823510651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618823510651</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -719,17 +743,8 @@
     <MESSAGE value="编写了便民服务(失物招领)的初步代码" />
     <MESSAGE value="编写了便民服务(失物招领)的初步代码 2021/3/24 16:18" />
     <MESSAGE value="编写了便民服务(失物招领)的 2021/4/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写了便民服务(失物招领)的 2021/4/4" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value=" 2021/4/19" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 2021/4/19" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -2,6 +2,7 @@ package com.portal.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.portal.exception.MyException;
 import com.portal.pojo.News;
 import com.portal.service.NewsService;
 import com.portal.utils.ImageUtils;
@@ -11,8 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
@@ -25,17 +24,16 @@ public class NewsController {
     private NewsService newsService;
 
     @PostMapping("publish")
-    public String PublishNews(String newsTitle, String newsContent, MultipartFile img) throws IOException {
+    public String PublishNews(String newsTitle, String newsContent, MultipartFile img, Integer userId) throws IOException {
         News news = new News();
         news.setNewsTitle(newsTitle);
         news.setNewsContent(newsContent);
 
         String path = ImageUtils.upload(img);
         news.setImg(path);
-        Integer i = newsService.addNews(news);
+        Integer i = newsService.addNews(news, userId);
 
         if (i != 1) {
-            logger.warn("发布失败");
             return "error";
         }
         return "success";
@@ -64,18 +62,25 @@ public class NewsController {
         return "success";
     }
 
+    /**
+     * 管理员修改新闻
+     */
     @PutMapping("/update")
-    public String editNews(News news, MultipartFile img) {
-
-
-        return "";
+    public String editNews(News news, Integer userId) {
+        Integer i = newsService.updateNews(news, userId);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
     }
 
     @GetMapping("/test")
-    public void test(HttpServletRequest request, HttpServletResponse response) {
+    public String test(Integer i) throws Exception {
 
         //String upload = ImageUtils.upload(img);
-
-        logger.info("没有文件");
+        if (i != 1) {
+            throw new MyException("111", "222");
+        }
+        return "asd";
     }
 }
