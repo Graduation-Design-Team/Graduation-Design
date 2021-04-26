@@ -16,4 +16,6 @@ public interface NewsService {
     Integer deleteNewsById(Integer newsId);
 
     Integer updateNews(News news, Integer userId);
+
+    Integer updateNewsPicture(String path, Integer newsId, Integer userId);
 }

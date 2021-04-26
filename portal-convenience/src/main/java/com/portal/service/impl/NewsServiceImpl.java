@@ -64,4 +64,14 @@ public class NewsServiceImpl implements NewsService {
         return newsDao.updateByPrimaryKeySelective(news);
     }
 
+    @Override
+    public Integer updateNewsPicture(String path, Integer newsId, Integer userId) {
+        Integer roleId = userDao.getRoleIdByUserId(userId);
+        if (roleId != 5) {
+            logger.warn("你不是管理员，无法修改新闻标题图片，修改失败！！");
+            return 0;
+        }
+        return newsDao.updateNewsPicture(path, newsId);
+    }
+
 }

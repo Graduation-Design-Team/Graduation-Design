@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portal.dao.CateDao">
+    <resultMap id="BaseResultMap" type="com.portal.pojo.Cate">
+        <id column="cate_id" jdbcType="INTEGER" property="cateId"/>
+        <result column="cate_title" jdbcType="VARCHAR" property="cateTitle"/>
+        <result column="cate_content" jdbcType="VARCHAR" property="cateContent"/>
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
+        <result column="status" jdbcType="BOOLEAN" property="status"/>
+        <result column="read_count" jdbcType="INTEGER" property="readCount"/>
+        <result column="img" jdbcType="VARCHAR" property="img"/>
+        <result column="type_id" jdbcType="INTEGER" property="typeId"/>
+        <result column="type_name" jdbcType="VARCHAR" property="typeName"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        cate_id
+        , cate_title, cate_content, gmt_create, gmt_modified, `status`, read_count,
+    img, type_id
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select c.cate_id,
+               c.cate_title,
+               c.cate_content,
+               c.gmt_create,
+               c.gmt_modified,
+               c.read_count,
+               c.img,
+               c.type_id,
+               t.type_name
+        from cate c,
+             `type` t
+        where c.type_id = t.type_id
+          and c.cate_id = #{cateId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from cate
+        where cate_id = #{cateId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="cate_id" keyProperty="cateId" parameterType="com.portal.pojo.Cate"
+            useGeneratedKeys="true">
+        insert into cate (cate_title, cate_content, gmt_create,
+                          gmt_modified, `status`, read_count,
+                          img, type_id)
+        values (#{cateTitle,jdbcType=VARCHAR}, #{cateContent,jdbcType=VARCHAR}, #{gmtCreate,jdbcType=TIMESTAMP},
+                #{gmtModified,jdbcType=TIMESTAMP}, #{status,jdbcType=BOOLEAN}, #{readCount,jdbcType=INTEGER},
+                #{img,jdbcType=VARCHAR}, #{typeId,jdbcType=INTEGER})
+    </insert>
+    <insert id="insertSelective" keyColumn="cate_id" keyProperty="cateId" parameterType="com.portal.pojo.Cate"
+            useGeneratedKeys="true">
+        insert into cate
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="cateTitle != null">
+                cate_title,
+            </if>
+            <if test="cateContent != null">
+                cate_content,
+            </if>
+
+            gmt_create,
+
+            <if test="gmtModified != null">
+                gmt_modified,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+            <if test="readCount != null">
+                read_count,
+            </if>
+            <if test="img != null">
+                img,
+            </if>
+            <if test="typeId != null">
+                type_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="cateTitle != null">
+                #{cateTitle,jdbcType=VARCHAR},
+            </if>
+            <if test="cateContent != null">
+                #{cateContent,jdbcType=VARCHAR},
+            </if>
+
+            now(),
+
+            <if test="gmtModified != null">
+                #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=BOOLEAN},
+            </if>
+            <if test="readCount != null">
+                #{readCount,jdbcType=INTEGER},
+            </if>
+            <if test="img != null">
+                #{img,jdbcType=VARCHAR},
+            </if>
+            <if test="typeId != null">
+                #{typeId,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.portal.pojo.Cate">
+        update cate
+        <set>
+            <if test="cateTitle != null">
+                cate_title = #{cateTitle,jdbcType=VARCHAR},
+            </if>
+            <if test="cateContent != null">
+                cate_content = #{cateContent,jdbcType=VARCHAR},
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            gmt_modified=now(),
+            <if test="status != null">
+                `status` = #{status,jdbcType=BOOLEAN},
+            </if>
+            <if test="readCount != null">
+                read_count = #{readCount,jdbcType=INTEGER},
+            </if>
+            <if test="img != null">
+                img = #{img,jdbcType=VARCHAR},
+            </if>
+            <if test="typeId != null">
+                type_id = #{typeId,jdbcType=INTEGER},
+            </if>
+        </set>
+        where cate_id = #{cateId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.portal.pojo.Cate">
+        update cate
+        set cate_title   = #{cateTitle,jdbcType=VARCHAR},
+            cate_content = #{cateContent,jdbcType=VARCHAR},
+            gmt_create   = #{gmtCreate,jdbcType=TIMESTAMP},
+            gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+            `status`     = #{status,jdbcType=BOOLEAN},
+            read_count   = #{readCount,jdbcType=INTEGER},
+            img          = #{img,jdbcType=VARCHAR},
+            type_id      = #{typeId,jdbcType=INTEGER}
+        where cate_id = #{cateId,jdbcType=INTEGER}
+    </update>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select c.cate_id,
+               c.cate_title,
+               c.cate_content,
+               c.type_id,
+               c.img,
+               c.gmt_create,
+               c.gmt_modified,
+               c.read_count,
+               t.type_name
+        from cate c,
+             `type` t
+        where c.type_id = t.type_id
+          and c.status = 1
+    </select>
+    <update id="updateCateStatus" parameterType="integer">
+        update cate
+        set status=0
+        where status = 1
+          and cate_id = #{cateId}
+    </update>
+    <update id="updateNewsPicture" parameterType="com.portal.pojo.Cate">
+        update cate
+        set img = #{img,jdbcType=VARCHAR}
+        where cate_id = #{cateId,jdbcType=INTEGER}
+    </update>
+</mapper>

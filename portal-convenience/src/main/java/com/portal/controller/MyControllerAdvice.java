@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestControllerAdvice
-public class MyContrillerAdvice {
+public class MyControllerAdvice {
     @ExceptionHandler(value = MyException.class)
     public Map<String, Object> exceptionHandler(MyException ex) {
         Map<String, Object> map = new HashMap<String, Object>();

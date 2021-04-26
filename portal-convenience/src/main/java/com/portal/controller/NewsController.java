@@ -23,7 +23,10 @@ public class NewsController {
     @Autowired
     private NewsService newsService;
 
-    @PostMapping("publish")
+    /**
+     * 管理员 发布一条新闻
+     */
+    @PostMapping("/publish")
     public String PublishNews(String newsTitle, String newsContent, MultipartFile img, Integer userId) throws IOException {
         News news = new News();
         news.setNewsTitle(newsTitle);
@@ -40,6 +43,9 @@ public class NewsController {
 
     }
 
+    /**
+     * 根据分页查询所有新闻
+     */
     @GetMapping("list")
     public PageInfo<News> newsList(@RequestParam(defaultValue = "1") Integer pageNum) {
         PageHelper.startPage(pageNum, 7);
@@ -48,11 +54,17 @@ public class NewsController {
         return newsPageInfo;
     }
 
+    /**
+     * 根据新闻id查询详情
+     */
     @GetMapping("detail")
     public News getNewsByid(Integer newsId) {
         return newsService.getNewsById(newsId);
     }
 
+    /**
+     * 根据newsId逻辑删除该条新闻
+     */
     @PutMapping("/delete")
     public String deleteNewsById(Integer newsId) {
         Integer i = newsService.deleteNewsById(newsId);
@@ -68,6 +80,19 @@ public class NewsController {
     @PutMapping("/update")
     public String editNews(News news, Integer userId) {
         Integer i = newsService.updateNews(news, userId);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
+    /**
+     * 管理员修改新闻标题图片
+     */
+    @PutMapping("/update-picture")
+    public String editNewsPicture(MultipartFile img, Integer newsId, Integer userId) throws IOException {
+        String path = ImageUtils.upload(img);
+        Integer i = newsService.updateNewsPicture(path, newsId, userId);
         if (i != 1) {
             return "error";
         }

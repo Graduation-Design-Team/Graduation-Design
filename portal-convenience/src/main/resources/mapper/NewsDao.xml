@@ -28,7 +28,7 @@
         where news_id = #{newsId,jdbcType=INTEGER}
     </delete>
     <insert id="insert" keyColumn="news_id" keyProperty="newsId" parameterType="com.portal.pojo.News"
-            useGeneratedKeys="true">
+            >
         insert into news (news_title, news_content, gmt_create,
                           gmt_modified, `status`, read_count,
                           img)
@@ -37,7 +37,7 @@
                 #{img,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" keyColumn="news_id" keyProperty="newsId" parameterType="com.portal.pojo.News"
-            useGeneratedKeys="true">
+    >
         insert into news
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="newsTitle != null">
@@ -132,5 +132,10 @@
         set status=0
         where news_id = #{newsId,jdbcType=INTEGER}
           and status = 1
+    </update>
+    <update id="updateNewsPicture" parameterType="com.portal.pojo.News">
+        update news
+        set img = #{img,jdbcType=VARCHAR}
+        where news_id = #{newsId,jdbcType=INTEGER}
     </update>
 </mapper>

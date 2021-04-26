@@ -14,24 +14,25 @@
     item_id, item_name, time_picked, place_picked, phone, time_pubished, user_id
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
+    select
+    <include refid="Base_Column_List"/>
     from items_claim
     where item_id = #{itemId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from items_claim
+    delete
+    from items_claim
     where item_id = #{itemId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim" useGeneratedKeys="true">
-    insert into items_claim (item_name, time_picked, place_picked, 
-      phone, time_pubished, user_id
-      )
-    values (#{itemName,jdbcType=VARCHAR}, #{timePicked,jdbcType=VARCHAR}, #{placePicked,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=VARCHAR}, #{timePubished,jdbcType=DATE}, #{userId,jdbcType=INTEGER}
-      )
+  <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim"
+  >
+    insert into items_claim (item_name, time_picked, place_picked,
+                             phone, time_pubished, user_id)
+    values (#{itemName,jdbcType=VARCHAR}, #{timePicked,jdbcType=VARCHAR}, #{placePicked,jdbcType=VARCHAR},
+            #{phone,jdbcType=VARCHAR}, #{timePubished,jdbcType=DATE}, #{userId,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim" useGeneratedKeys="true">
+  <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim"
+  >
     insert into items_claim
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="itemName != null">

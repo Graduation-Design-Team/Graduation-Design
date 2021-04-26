@@ -14,22 +14,25 @@
     item_id, item_name, place_lost, time_lost, phone, time_published, user_id
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
+    select
+    <include refid="Base_Column_List"/>
     from items_search
     where item_id = #{itemId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from items_search
+    delete
+    from items_search
     where item_id = #{itemId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsSearch" useGeneratedKeys="true">
+  <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsSearch"
+  >
     insert into items_search (item_name, place_lost, time_lost,
                               phone, time_published, user_id)
     values (#{itemName,jdbcType=VARCHAR}, #{placeLost,jdbcType=VARCHAR}, #{timeLost,jdbcType=VARCHAR},
             #{phone,jdbcType=VARCHAR}, #{timePublished,jdbcType=TIMESTAMP}, #{userId,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsSearch" useGeneratedKeys="true">
+  <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsSearch"
+  >
     insert into items_search
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="itemName != null">

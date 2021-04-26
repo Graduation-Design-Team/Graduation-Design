@@ -2,6 +2,7 @@ package com.portal.dao;
 
 
 import com.portal.pojo.News;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -21,4 +22,6 @@ public interface NewsDao {
     List<News> selectAll();
 
     Integer updateNewsStatus(Integer newsId);
+
+    Integer updateNewsPicture(@Param("img") String path, Integer newsId);
 }
