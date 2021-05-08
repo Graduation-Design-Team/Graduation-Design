@@ -90,14 +90,9 @@
       <if test="phone != null">
         phone = #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="timePublished != null">
-        time_published = #{timePublished,jdbcType=TIMESTAMP},
-      </if>
-      <if test="userId != null">
-        user_id = #{userId,jdbcType=INTEGER},
-      </if>
     </set>
     where item_id = #{itemId,jdbcType=INTEGER}
+    and user_id= #{userId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.portal.pojo.ItemsSearch">
     update items_search
@@ -142,4 +137,45 @@
       and user_id = #{userId}
       and status = 1
   </update>
+  <select id="selectNumWithDay" resultType="integer">
+    select count(*)
+    from items_search
+    where TO_DAYS(time_published) = TO_DAYS(NOW())
+  </select>
+  <select id="selectNumWithWeek" resultType="integer">
+    select count(*)
+    from items_search
+    where yearweek(date_format(time_published, '%Y-%m-%d'), 1) = yearweek(now(), 1)
+  </select>
+  <select id="selectNumWithMonth" resultType="integer">
+    select count(*)
+    from items_search
+    where DATE_FORMAT(time_published, '%Y%m') = DATE_FORMAT(CURDATE(), '%Y%m')
+  </select>
+
+  <select id="selectSearchWithDay" resultMap="BaseResultMap">
+    select *
+    from items_search
+    where TO_DAYS(time_published) = TO_DAYS(NOW())
+  </select>
+  <select id="selectSearchWithWeek" resultMap="BaseResultMap">
+    select *
+    from items_search
+    where yearweek(date_format(time_published, '%Y-%m-%d'), 1) = yearweek(now(), 1)
+  </select>
+  <select id="selectSearchWithMonth" resultMap="BaseResultMap">
+    select *
+    from items_search
+    where DATE_FORMAT(time_published, '%Y%m') = DATE_FORMAT(CURDATE(), '%Y%m')
+  </select>
+  <select id="selectSearchDescByTime" resultMap="BaseResultMap">
+    select *
+    from items_search
+    order by time_published desc
+  </select>
+  <select id="selectSearchSelf" parameterType="integer" resultMap="BaseResultMap">
+    select *
+    from items_search
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
 </mapper>

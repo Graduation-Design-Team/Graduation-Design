@@ -3,6 +3,7 @@ package com.portal.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.portal.exception.MyException;
+import com.portal.pojo.Comment;
 import com.portal.pojo.News;
 import com.portal.service.NewsService;
 import com.portal.utils.ImageUtils;
@@ -55,6 +56,17 @@ public class NewsController {
     }
 
     /**
+     * 管理员查询所有已删除新闻
+     */
+    @GetMapping("/list/zero")
+    public PageInfo<News> getNewsWithDeletedByAdmin(Integer userId, @RequestParam(defaultValue = "1") Integer pageNum) {
+        PageHelper.startPage(pageNum, 7);
+        List<News> news = newsService.selectNewsWithDelted(userId);
+        PageInfo<News> newsPageInfo = new PageInfo<>(news);
+        return newsPageInfo;
+    }
+
+    /**
      * 根据新闻id查询详情
      */
     @GetMapping("detail")
@@ -73,6 +85,19 @@ public class NewsController {
         }
         return "success";
     }
+
+    /**
+     * 根据newsId逻辑恢复该条新闻
+     */
+    @PutMapping("/recover")
+    public String RecoverNewsById(Integer newsId) {
+        Integer i = newsService.recoverNewsById(newsId);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
 
     /**
      * 管理员修改新闻
@@ -98,6 +123,89 @@ public class NewsController {
         }
         return "success";
     }
+
+    /**
+     * 用户发表评论
+     */
+    @PostMapping("/comment")
+    public String publishCommment(Integer newsId, Integer userId, String content) {
+        Integer i = newsService.addComment(newsId, userId, content);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
+    /**
+     * 用户编辑自己的评论
+     */
+    @PutMapping("/comment")
+    public String editComment(Integer commentId, Integer newsId, Integer userId, String content) {
+        Integer i = newsService.updateComment(commentId, newsId, userId, content);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
+    /**
+     * 管理员删除不正当评论
+     */
+    @DeleteMapping("/comment")
+    public String deleteComment(Integer commentId, Integer userId) {
+        Integer i = newsService.deleteCommentById(commentId, userId);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
+    /**
+     * 管理员逻辑删除不正当评论
+     */
+    @PutMapping("/comment/status/invalid")
+    public String updateCommentStatus0(Integer commentId, Integer userId) {
+        Integer i = newsService.updateStatus(commentId, userId);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
+    /**
+     * 分页展示所有评论
+     */
+    @GetMapping("/comment")
+    public PageInfo<Comment> getComment(@RequestParam(defaultValue = "1") Integer pageNum) {
+        PageHelper.startPage(pageNum, 7);
+        List<Comment> comments = newsService.selectComment();
+        PageInfo<Comment> commentPageInfo = new PageInfo<>(comments);
+        return commentPageInfo;
+    }
+
+    /**
+     * 管理员查询所有已删除评论
+     */
+    @GetMapping("/comment/deleted")
+    public PageInfo<Comment> getCommentWithDeleted(@RequestParam(defaultValue = "1") Integer pageNum, Integer userId) {
+        PageHelper.startPage(pageNum, 7);
+        List<Comment> comments = newsService.selectCommentWithDeleted(userId);
+        PageInfo<Comment> commentPageInfo = new PageInfo<>(comments);
+        return commentPageInfo;
+    }
+
+    /**
+     * 管理员恢复已删除评论
+     */
+    @PutMapping("/comment/status/valid")
+    public String updateCommentStatus1(Integer commentId, Integer userId) {
+        Integer i = newsService.updateStatus1(commentId, userId);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
 
     @GetMapping("/test")
     public String test(Integer i) throws Exception {

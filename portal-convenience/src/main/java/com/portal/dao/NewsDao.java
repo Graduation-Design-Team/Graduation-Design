@@ -24,4 +24,8 @@ public interface NewsDao {
     Integer updateNewsStatus(Integer newsId);
 
     Integer updateNewsPicture(@Param("img") String path, Integer newsId);
+
+    Integer updateNewsStatusOne(Integer newsId);
+
+    List<News> selectDeletedNews();
 }

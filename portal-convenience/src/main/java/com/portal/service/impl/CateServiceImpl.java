@@ -3,6 +3,7 @@ package com.portal.service.impl;
 import com.portal.dao.CateDao;
 import com.portal.dao.UserDao;
 import com.portal.pojo.Cate;
+import com.portal.pojo.Type;
 import com.portal.service.CateService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -65,5 +66,35 @@ public class CateServiceImpl implements CateService {
             return 0;
         }
         return cateDao.updateNewsPicture(path, cateId);
+    }
+
+    @Override
+    public List<Cate> getCatesByTypeId(Integer typeId) {
+        return cateDao.selectByTypeId(typeId);
+    }
+
+    @Override
+    public List<Type> getCateType() {
+        return cateDao.selectType();
+    }
+
+    @Override
+    public Integer addType(String typeName, Integer userId) {
+        Integer roleId = userDao.getRoleIdByUserId(userId);
+        if (roleId != 5) {
+            logger.warn("你不是管理员，无法添加菜系，添加失败！！");
+            return 0;
+        }
+        return cateDao.insertType(typeName);
+    }
+
+    @Override
+    public List<Cate> getCatesDescByReadcount() {
+        return cateDao.selectCateDescByReadcount();
+    }
+
+    @Override
+    public List<Cate> getCatesDescByTime() {
+        return cateDao.selectCateDescByTime();
     }
 }

@@ -1,5 +1,6 @@
 package com.portal.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -11,37 +12,40 @@ import java.util.Date;
  */
 @Data
 public class ItemsClaim implements Serializable {
+    private static final long serialVersionUID = 1L;
     /**
-     * 物品的id
+     * 拾得物品id
      */
     private Integer itemId;
-
     /**
-     * 拾到的物品名称
+     * 物品名称
      */
     private String itemName;
-
     /**
-     * 拾到物品时的时间
+     * 拾得地点
      */
-    private String timePicked;
-
+    private String placeLost;
     /**
-     * 拾到物品的地点
+     * 拾得时间
      */
-    private String placePicked;
-
+    private String timeLost;
     /**
      * 联系电话
      */
     private String phone;
-
     /**
-     * 发布招领信息的时间
+     * 发布时间
      */
-    private Date timePubished;
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private Date timePublished;
+    /**
+     * 用户id
+     */
     private Integer userId;
+    /**
+     * 1:有效,0:无效
+     */
+    private Boolean status;
 
-    private static final long serialVersionUID = 1L;
+
 }

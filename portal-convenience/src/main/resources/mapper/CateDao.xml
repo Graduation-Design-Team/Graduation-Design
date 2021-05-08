@@ -13,6 +13,10 @@
         <result column="type_id" jdbcType="INTEGER" property="typeId"/>
         <result column="type_name" jdbcType="VARCHAR" property="typeName"/>
     </resultMap>
+    <resultMap id="TypeResultMap" type="com.portal.pojo.Type">
+        <id column="type_id" jdbcType="INTEGER" property="typeId"/>
+        <result column="type_name" jdbcType="VARCHAR" property="typeName"/>
+    </resultMap>
     <sql id="Base_Column_List">
         cate_id
         , cate_title, cate_content, gmt_create, gmt_modified, `status`, read_count,
@@ -38,8 +42,7 @@
         from cate
         where cate_id = #{cateId,jdbcType=INTEGER}
     </delete>
-    <insert id="insert" keyColumn="cate_id" keyProperty="cateId" parameterType="com.portal.pojo.Cate"
-            useGeneratedKeys="true">
+    <insert id="insert" keyColumn="cate_id" keyProperty="cateId" parameterType="com.portal.pojo.Cate">
         insert into cate (cate_title, cate_content, gmt_create,
                           gmt_modified, `status`, read_count,
                           img, type_id)
@@ -48,7 +51,7 @@
                 #{img,jdbcType=VARCHAR}, #{typeId,jdbcType=INTEGER})
     </insert>
     <insert id="insertSelective" keyColumn="cate_id" keyProperty="cateId" parameterType="com.portal.pojo.Cate"
-            useGeneratedKeys="true">
+    >
         insert into cate
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="cateTitle != null">
@@ -169,4 +172,57 @@
         set img = #{img,jdbcType=VARCHAR}
         where cate_id = #{cateId,jdbcType=INTEGER}
     </update>
+    <select id="selectByTypeId" parameterType="integer" resultMap="BaseResultMap">
+        select c.cate_id,
+               c.cate_title,
+               c.cate_content,
+               c.type_id,
+               c.img,
+               c.gmt_create,
+               c.gmt_modified,
+               c.read_count,
+               t.type_name
+        from cate c,
+             `type` t
+        where c.type_id = t.type_id
+          and c.status = 1
+          and t.type_id = #{typeId}
+    </select>
+    <select id="selectType" resultMap="TypeResultMap">
+        select type_id, type_name
+        from type
+    </select>
+    <insert id="insertType" parameterType="string">
+        insert into type(type_name) value (#{typeName,jdbcType=VARCHAR})
+    </insert>
+    <select id="selectCateDescByReadcount" resultMap="BaseResultMap">
+        select c.cate_id,
+               c.cate_title,
+               c.cate_content,
+               c.type_id,
+               c.img,
+               c.gmt_create,
+               c.gmt_modified,
+               c.read_count,
+               t.type_name
+        from cate c,
+             `type` t
+        where c.type_id = t.type_id
+        order by c.read_count desc
+    </select>
+    <select id="selectCateDescByTime" resultMap="BaseResultMap">
+        select c.cate_id,
+               c.cate_title,
+               c.cate_content,
+               c.type_id,
+               c.img,
+               c.gmt_create,
+               c.gmt_modified,
+               c.read_count,
+               t.type_name
+        from cate c,
+             `type` t
+        where c.type_id = t.type_id
+        order by c.gmt_create desc
+    </select>
 </mapper>

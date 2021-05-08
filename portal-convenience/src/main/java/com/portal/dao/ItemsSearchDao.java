@@ -28,4 +28,20 @@ public interface ItemsSearchDao {
     int getCount(Integer userId);
 
     int updateStatusByUser(ItemsSearch itemsSearch);
+
+    Integer selectNumWithDay();
+
+    Integer selectNumWithMonth();
+
+    Integer selectNumWithWeek();
+
+    List<ItemsSearch> selectSearchWithDay();
+
+    List<ItemsSearch> selectSearchWithWeek();
+
+    List<ItemsSearch> selectSearchWithMonth();
+
+    List<ItemsSearch> selectSearchDescByTime();
+
+    List<ItemsSearch> selectSearchSelf(Integer userId);
 }

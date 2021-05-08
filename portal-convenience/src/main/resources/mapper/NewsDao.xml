@@ -138,4 +138,15 @@
         set img = #{img,jdbcType=VARCHAR}
         where news_id = #{newsId,jdbcType=INTEGER}
     </update>
+    <update id="updateNewsStatusOne" parameterType="integer">
+        update news
+        set status=1
+        where status = 0
+          and news_id = #{newsId,jdbcType=INTEGER}
+    </update>
+    <select id="selectDeletedNews" resultMap="BaseResultMap">
+        select *
+        from news
+        where status = 0
+    </select>
 </mapper>

@@ -3,6 +3,7 @@ package com.portal.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.portal.pojo.Cate;
+import com.portal.pojo.Type;
 import com.portal.service.CateService;
 import com.portal.utils.ImageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/cate")
 public class CateController {
+
     @Autowired
     private CateService cateService;
 
@@ -92,4 +94,57 @@ public class CateController {
         return "success";
     }
 
+    /**
+     * 用户根据菜系typeId查询该菜系所有的美食餐饮
+     */
+    @GetMapping("/cates-with-typeId")
+    public PageInfo<Cate> getCateByTypeId(Integer typeId, @RequestParam(defaultValue = "1") Integer pageNum) {
+        PageHelper.startPage(pageNum, 7);
+        List<Cate> cates = cateService.getCatesByTypeId(typeId);
+        PageInfo<Cate> catePageInfo = new PageInfo<>(cates);
+        return catePageInfo;
+
+    }
+
+    /**
+     * 查询所有菜系
+     */
+    @GetMapping("/list/cateType")
+    public List<Type> getCateType() {
+        return cateService.getCateType();
+    }
+
+    /**
+     * 管理员添加菜系
+     */
+    @PostMapping("/addType")
+    public String addType(String typeName, Integer userId) {
+        Integer i = cateService.addType(typeName, userId);
+        if (i != 1) {
+            return "error";
+        }
+        return "success";
+    }
+
+    /**
+     * 根据浏览量降序查询美食餐饮列表
+     */
+    @GetMapping("/readcount/desc")
+    public PageInfo<Cate> getCatesDescByReadcount(@RequestParam(defaultValue = "1") Integer pageNum) {
+        PageHelper.startPage(pageNum, 7);
+        List<Cate> cateList = cateService.getCatesDescByReadcount();
+        PageInfo<Cate> catePageInfo = new PageInfo<>(cateList);
+        return catePageInfo;
+    }
+
+    /**
+     * 根据发布时间降序查询美食餐饮列表
+     */
+    @GetMapping("/time/desc")
+    public PageInfo<Cate> getCatesDescByTime(@RequestParam(defaultValue = "1") Integer pageNum) {
+        PageHelper.startPage(pageNum, 7);
+        List<Cate> cateList = cateService.getCatesDescByTime();
+        PageInfo<Cate> catePageInfo = new PageInfo<>(cateList);
+        return catePageInfo;
+    }
 }

@@ -2,16 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.portal.dao.ItemsClaimDao">
   <resultMap id="BaseResultMap" type="com.portal.pojo.ItemsClaim">
-    <id column="item_id" jdbcType="INTEGER" property="itemId" />
-    <result column="item_name" jdbcType="VARCHAR" property="itemName" />
-    <result column="time_picked" jdbcType="VARCHAR" property="timePicked" />
-    <result column="place_picked" jdbcType="VARCHAR" property="placePicked" />
-    <result column="phone" jdbcType="VARCHAR" property="phone" />
-    <result column="time_pubished" jdbcType="DATE" property="timePubished" />
-    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <id column="item_id" jdbcType="INTEGER" property="itemId"/>
+    <result column="item_name" jdbcType="VARCHAR" property="itemName"/>
+    <result column="place_lost" jdbcType="VARCHAR" property="placeLost"/>
+    <result column="time_lost" jdbcType="VARCHAR" property="timeLost"/>
+    <result column="phone" jdbcType="VARCHAR" property="phone"/>
+    <result column="time_published" jdbcType="TIMESTAMP" property="timePublished"/>
+    <result column="user_id" jdbcType="INTEGER" property="userId"/>
+    <result column="status" jdbcType="BOOLEAN" property="status"/>
   </resultMap>
   <sql id="Base_Column_List">
-    item_id, item_name, time_picked, place_picked, phone, time_pubished, user_id
+    item_id
+    , item_name, place_lost, time_lost, phone, time_published, user_id, `status`
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select
@@ -24,54 +26,60 @@
     from items_claim
     where item_id = #{itemId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim"
-  >
-    insert into items_claim (item_name, time_picked, place_picked,
-                             phone, time_pubished, user_id)
-    values (#{itemName,jdbcType=VARCHAR}, #{timePicked,jdbcType=VARCHAR}, #{placePicked,jdbcType=VARCHAR},
-            #{phone,jdbcType=VARCHAR}, #{timePubished,jdbcType=DATE}, #{userId,jdbcType=INTEGER})
+  <insert id="insert" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim">
+    insert into items_claim (item_name, place_lost, time_lost,
+                             phone, time_published, user_id,
+                             `status`)
+    values (#{itemName,jdbcType=VARCHAR}, #{placeLost,jdbcType=VARCHAR}, #{timeLost,jdbcType=VARCHAR},
+            #{phone,jdbcType=VARCHAR}, #{timePublished,jdbcType=TIMESTAMP}, #{userId,jdbcType=INTEGER},
+            #{status,jdbcType=BOOLEAN})
   </insert>
-  <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim"
-  >
+  <insert id="insertSelective" keyColumn="item_id" keyProperty="itemId" parameterType="com.portal.pojo.ItemsClaim">
     insert into items_claim
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="itemName != null">
         item_name,
       </if>
-      <if test="timePicked != null">
-        time_picked,
+      <if test="placeLost != null">
+        place_lost,
       </if>
-      <if test="placePicked != null">
-        place_picked,
+      <if test="timeLost != null">
+        time_lost,
       </if>
       <if test="phone != null">
         phone,
       </if>
-      <if test="timePubished != null">
-        time_pubished,
+      <if test="timePublished != null">
+        time_published,
       </if>
       <if test="userId != null">
         user_id,
+      </if>
+      <if test="status != null">
+        `status`,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="itemName != null">
         #{itemName,jdbcType=VARCHAR},
       </if>
-      <if test="timePicked != null">
-        #{timePicked,jdbcType=VARCHAR},
+      <if test="placeLost != null">
+        #{placeLost,jdbcType=VARCHAR},
       </if>
-      <if test="placePicked != null">
-        #{placePicked,jdbcType=VARCHAR},
+      <if test="timeLost != null">
+        #{timeLost,jdbcType=VARCHAR},
       </if>
       <if test="phone != null">
         #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="timePubished != null">
-        #{timePubished,jdbcType=DATE},
+      <if test="timePublished != null">
+        #{timePublished,jdbcType=TIMESTAMP},
       </if>
       <if test="userId != null">
         #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=BOOLEAN},
       </if>
     </trim>
   </insert>
@@ -81,32 +89,96 @@
       <if test="itemName != null">
         item_name = #{itemName,jdbcType=VARCHAR},
       </if>
-      <if test="timePicked != null">
-        time_picked = #{timePicked,jdbcType=VARCHAR},
+      <if test="placeLost != null">
+        place_lost = #{placeLost,jdbcType=VARCHAR},
       </if>
-      <if test="placePicked != null">
-        place_picked = #{placePicked,jdbcType=VARCHAR},
+      <if test="timeLost != null">
+        time_lost = #{timeLost,jdbcType=VARCHAR},
       </if>
       <if test="phone != null">
         phone = #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="timePubished != null">
-        time_pubished = #{timePubished,jdbcType=DATE},
-      </if>
-      <if test="userId != null">
-        user_id = #{userId,jdbcType=INTEGER},
-      </if>
     </set>
     where item_id = #{itemId,jdbcType=INTEGER}
+    and user_id=#{userId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.portal.pojo.ItemsClaim">
     update items_claim
-    set item_name = #{itemName,jdbcType=VARCHAR},
-      time_picked = #{timePicked,jdbcType=VARCHAR},
-      place_picked = #{placePicked,jdbcType=VARCHAR},
-      phone = #{phone,jdbcType=VARCHAR},
-      time_pubished = #{timePubished,jdbcType=DATE},
-      user_id = #{userId,jdbcType=INTEGER}
+    set item_name      = #{itemName,jdbcType=VARCHAR},
+        place_lost     = #{placeLost,jdbcType=VARCHAR},
+        time_lost      = #{timeLost,jdbcType=VARCHAR},
+        phone          = #{phone,jdbcType=VARCHAR},
+        time_published = #{timePublished,jdbcType=TIMESTAMP},
+        user_id        = #{userId,jdbcType=INTEGER},
+        `status`       = #{status,jdbcType=BOOLEAN}
     where item_id = #{itemId,jdbcType=INTEGER}
   </update>
+  <select id="selectItemsClaim" resultMap="BaseResultMap">
+    select item_name, place_lost, time_lost, phone, time_published, user_id
+    from items_claim
+    where status = 1
+  </select>
+  <select id="getCount" resultType="integer">
+    select count(*)
+    from items_claim
+    where user_id = #{userId}
+      and status = 1
+  </select>
+  <insert id="insertItemsClaim" parameterType="com.portal.pojo.ItemsClaim">
+    INSERT INTO items_claim (item_name, place_lost, time_lost, phone, time_published, user_id)
+    VALUES (#{itemName}, #{placeLost}, #{timeLost}, #{phone}, now(), #{userId})
+  </insert>
+  <update id="updateStatusByAdmin" parameterType="com.portal.pojo.ItemsClaim">
+    update items_claim
+    set status=0
+    where item_id = #{itemId}
+      and status = 1
+  </update>
+  <update id="updateStatusByUser" parameterType="com.portal.pojo.ItemsClaim">
+    update items_claim
+    set status=0
+    where item_id = #{itemId}
+      and user_id = #{userId}
+      and status = 1
+  </update>
+  <select id="selectNumWithDay" resultType="integer">
+    select count(*)
+    from items_claim
+    where TO_DAYS(time_published) = TO_DAYS(NOW())
+  </select>
+  <select id="selectNumWithWeek" resultType="integer">
+    select count(*)
+    from items_claim
+    where yearweek(date_format(time_published, '%Y-%m-%d'), 1) = yearweek(now(), 1)
+  </select>
+  <select id="selectNumWithMonth" resultType="integer">
+    select count(*)
+    from items_claim
+    where DATE_FORMAT(time_published, '%Y%m') = DATE_FORMAT(CURDATE(), '%Y%m')
+  </select>
+  <select id="selectClaimWithDay" resultMap="BaseResultMap">
+    select *
+    from items_claim
+    where TO_DAYS(time_published) = TO_DAYS(NOW())
+  </select>
+  <select id="selectClaimWithWeek" resultMap="BaseResultMap">
+    select *
+    from items_claim
+    where yearweek(date_format(time_published, '%Y-%m-%d'), 1) = yearweek(now(), 1)
+  </select>
+  <select id="selectClaimWithMonth" resultMap="BaseResultMap">
+    select *
+    from items_claim
+    where DATE_FORMAT(time_published, '%Y%m') = DATE_FORMAT(CURDATE(), '%Y%m')
+  </select>
+  <select id="selectClaimDescByTime" resultMap="BaseResultMap">
+    select *
+    from items_claim
+    order by time_published desc
+  </select>
+  <select id="selectClaimSelf" resultMap="BaseResultMap">
+    select *
+    from items_claim
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
 </mapper>

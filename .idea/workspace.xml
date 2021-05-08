@@ -5,25 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc14a95-badf-49da-98ca-63a4227aa240" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/CateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/CateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/CateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/CateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/CateDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/Cate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/ClaimController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/CommentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/ClaimService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/ClaimServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/CommentDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/MyContrillerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/MyControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/CateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/CateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/CateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/CateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsClaimDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsClaimDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/ItemsSearchDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/NewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/dao/NewsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/CateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/CateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/NewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/CateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/CateServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/NewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/NewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/java/com/portal/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/CateDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/CateDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsClaimDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsClaimDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/ItemsSearchDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/NewsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/NewsDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsClaim.java" beforeDir="false" afterPath="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo/ItemsClaim.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,7 +425,7 @@
     <property name="android.sdk.path" value="D:/IdeaAndroidSdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615459366530" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -433,10 +441,11 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.portal.service" />
-      <recent name="com.portal.dao" />
       <recent name="com.portal.service.impl" />
+      <recent name="com.portal.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portal-pojo/src/main/java/com/portal/pojo" />
       <recent name="$PROJECT_DIR$/portal-convenience/src/main/resources/mapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -603,7 +612,9 @@
       <workItem from="1618999276173" duration="28000" />
       <workItem from="1618999503051" duration="41000" />
       <workItem from="1618999565551" duration="184000" />
-      <workItem from="1619057747764" duration="52792000" />
+      <workItem from="1619057747764" duration="69890000" />
+      <workItem from="1619660047104" duration="17160000" />
+      <workItem from="1620265650945" duration="16906000" />
     </task>
     <task id="LOCAL-00001" summary="编写了便民服务(失物招领)的初步代码">
       <created>1615680133333</created>
@@ -640,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619342626118</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=" 2021/4/26">
+      <created>1619431834591</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619431834591</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -755,7 +773,8 @@
     <MESSAGE value="编写了便民服务(失物招领)的 2021/4/4" />
     <MESSAGE value=" 2021/4/19" />
     <MESSAGE value=" 2021/4/25" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 2021/4/25" />
+    <MESSAGE value=" 2021/4/26" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 2021/4/26" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

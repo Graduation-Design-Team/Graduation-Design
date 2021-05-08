@@ -53,4 +53,56 @@ public class SearchServiceImpl implements SearchService {
     public int updateStatusByUser(ItemsSearch itemsSearch) {
         return itemsSearchDao.updateStatusByUser(itemsSearch);
     }
+
+    @Override
+    public ItemsSearch getSearchById(Integer itemId) {
+        return itemsSearchDao.selectByPrimaryKey(itemId);
+    }
+
+    @Override
+    public Integer updateSearch(ItemsSearch itemsSearch) {
+        return itemsSearchDao.updateByPrimaryKeySelective(itemsSearch);
+    }
+
+    @Override
+    public Integer getNumWithDay() {
+        return itemsSearchDao.selectNumWithDay();
+    }
+
+    @Override
+    public Integer getNumWithWeek() {
+        return itemsSearchDao.selectNumWithWeek();
+    }
+
+    @Override
+    public Integer getNumWithMonth() {
+        return itemsSearchDao.selectNumWithMonth();
+    }
+
+    @Override
+    public List<ItemsSearch> getSearchWithDay() {
+        return itemsSearchDao.selectSearchWithDay();
+    }
+
+    @Override
+    public List<ItemsSearch> getSearchWithWeek() {
+        return itemsSearchDao.selectSearchWithWeek();
+    }
+
+    @Override
+    public List<ItemsSearch> getSearchWithMonth() {
+        return itemsSearchDao.selectSearchWithMonth();
+    }
+
+    @Override
+    public List<ItemsSearch> getSearchDescByTime() {
+        return itemsSearchDao.selectSearchDescByTime();
+    }
+
+    @Override
+    public List<ItemsSearch> getSearchSelf(Integer userId) {
+        return itemsSearchDao.selectSearchSelf(userId);
+    }
+
+
 }
